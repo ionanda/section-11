@@ -116,7 +116,7 @@ class IntervalsSync:
         Extract eFTP, W', P-max from wellness.sportInfo.
         These are the accurate live estimates that match the Intervals.icu UI.
         """
-        sport_info = wellness_data.get("sportInfo", [])
+        sport_info = wellness_data.get("sportInfo") or []
         
         # Find cycling sport info
         cycling_info = None
