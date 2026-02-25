@@ -12,7 +12,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-02-25T11:16:13.590227",
+    "last_updated": "2026-02-25T11:44:16.728271",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.5.0"
@@ -38,7 +38,7 @@
       "atl": null,
       "tsb": null,
       "ramp_rate": null,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "ftp_outdoor": 185,
@@ -139,12 +139,15 @@
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. Insufficient data in one or both windows."
       }
     },
-    "consistency_index": null,
+    "consistency_index": 0.0,
     "consistency_details": {
-      "planned_days": 0,
+      "planned_days": 1,
       "completed_days": 0,
       "matched_days": 0,
-      "note": "No planned workouts in period"
+      "planned_dates": [
+        "2026-02-25"
+      ],
+      "completed_dates": []
     },
     "phase_detected": "Indeterminate",
     "phase_triggers": [
@@ -169,15 +172,15 @@
     "w_prime": null,
     "w_prime_kj": null,
     "p_max": null,
-    "power_model_source": "unavailable",
+    "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-02-25T11:16:13.589795",
+    "calculation_timestamp": "2026-02-25T11:44:16.727858",
     "data_quality": {
       "hrv_data_points": 0,
       "rhr_data_points": 0,
       "activities_7d": 0,
       "activities_28d": 0,
-      "planned_workouts_7d": 0,
+      "planned_workouts_7d": 1,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -185,8 +188,34 @@
     }
   },
   "recent_activities": [],
-  "wellness_data": [],
-  "planned_workouts": [],
+  "wellness_data": [
+    {
+      "date": "2026-02-25",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
+    }
+  ],
+  "planned_workouts": [
+    {
+      "id": "event_1",
+      "date": "2026-02-25T00:00:00",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "description": "- 15m ramp 83-111W (Warm up gradual)\n- 40m 120W (Z2 Aer\u00f3bica Estable - No pases de 130W)\n- 5m 85W (Cool down)",
+      "planned_tss": 37,
+      "duration_hours": 0.0
+    }
+  ],
   "weekly_summary": {
     "total_training_hours": 0.0,
     "total_tss": 0,
