@@ -4,6 +4,10 @@ Intervals.icu → GitHub/Local JSON Export
 Exports training data for LLM access.
 Supports both automated GitHub sync and manual local export.
 
+Version 3.5.1 - Apple Watch HRV Fix
+  - Modified HRV extraction to prioritize SDNN (hrvSdnn) over rMSSD (hrv)
+    for native Apple Watch / BreakAway compatibility.
+
 Version 3.5.0 - Race Calendar & Race-Week Protocol
   - 90-day race calendar from Intervals.icu RACE_A/B/C event categories
   - Three-layer race awareness: calendar (D-90), taper onset (D-14 to D-8), race week (D-7 to D-0)
@@ -42,7 +46,7 @@ class IntervalsSync:
     HISTORY_FILE = "history.json"
     UPSTREAM_REPO = "CrankAddict/section-11"
     CHANGELOG_FILE = "changelog.json"
-    VERSION = "3.5.0"
+    VERSION = "3.5.1" # Version bumped for SDNN fix
 
     # Sport family mapping for per-sport monotony calculation
     # Multi-sport athletes get inflated total monotony when cross-training
@@ -310,7 +314,7 @@ class IntervalsSync:
         
         # Filter to display range for recent_activities
         activities_display = [a for a in activities_extended 
-                             if a.get("start_date_local", "")[:10] >= oldest_display]
+                              if a.get("start_date_local", "")[:10] >= oldest_display]
         
         print("Fetching wellness data...")
         wellness = self._intervals_get("wellness", {"oldest": oldest_display, "newest": newest})
@@ -519,7 +523,7 @@ class IntervalsSync:
                 "current_metrics": {
                     "weight_kg": latest_wellness.get("weight") or athlete.get("icu_weight"),
                     "resting_hr": latest_wellness.get("restingHR") or athlete.get("icu_resting_hr"),
-                    "hrv": latest_wellness.get("hrv"),
+                    "hrv": (latest_wellness.get("hrvSdnn") or latest_wellness.get("hrv")),
                     "sleep_quality": latest_wellness.get("sleepQuality"),
                     "sleep_hours": round(latest_wellness.get("sleepSecs", 0) / 3600, 2) if latest_wellness.get("sleepSecs") else None
                 }
@@ -632,14 +636,14 @@ class IntervalsSync:
         strain = round(tss_7d_total * monotony, 0) if monotony else None
         
         # === BASELINES (7-day and extended) ===
-        hrv_values_7d = [w.get("hrv") for w in wellness_7d if w.get("hrv")]
+        hrv_values_7d = [(w.get("hrvSdnn") or w.get("hrv")) for w in wellness_7d if (w.get("hrvSdnn") or w.get("hrv"))]
         rhr_values_7d = [w.get("restingHR") for w in wellness_7d if w.get("restingHR")]
         
         hrv_baseline_7d = round(statistics.mean(hrv_values_7d), 1) if hrv_values_7d else None
         rhr_baseline_7d = round(statistics.mean(rhr_values_7d), 1) if rhr_values_7d else None
         
         # Extended baselines (for more stable reference)
-        hrv_values_ext = [w.get("hrv") for w in wellness_extended if w.get("hrv")]
+        hrv_values_ext = [(w.get("hrvSdnn") or w.get("hrv")) for w in wellness_extended if (w.get("hrvSdnn") or w.get("hrv"))]
         rhr_values_ext = [w.get("restingHR") for w in wellness_extended if w.get("restingHR")]
         
         hrv_baseline_28d = round(statistics.mean(hrv_values_ext), 1) if hrv_values_ext else None
@@ -648,7 +652,7 @@ class IntervalsSync:
         # === RECOVERY INDEX (RI) ===
         # Formula: (HRV_today / HRV_baseline) ÷ (RHR_today / RHR_baseline)
         # Interpretation: >1.0 = good recovery, <1.0 = poor recovery
-        latest_hrv = wellness_7d[-1].get("hrv") if wellness_7d else None
+        latest_hrv = (wellness_7d[-1].get("hrvSdnn") or wellness_7d[-1].get("hrv")) if wellness_7d else None
         latest_rhr = wellness_7d[-1].get("restingHR") if wellness_7d else None
         
         if latest_hrv and latest_rhr and hrv_baseline_7d and rhr_baseline_7d:
@@ -776,9 +780,9 @@ class IntervalsSync:
             is_hard = (
                 (day_z3 + day_z4 + day_z5 + day_z6 + day_z7) >= 1800 or  # z3+: 30 min tempo+
                 (day_z4 + day_z5 + day_z6 + day_z7) >= 600 or            # z4+: 10 min threshold+
-                (day_z5 + day_z6 + day_z7) >= 300 or                      # z5+: 5 min VO2max+
-                (day_z6 + day_z7) >= 120 or                                # z6+: 2 min anaerobic+
-                day_z7 >= 60                                                # z7:  1 min neuromuscular
+                (day_z5 + day_z6 + day_z7) >= 300 or                     # z5+: 5 min VO2max+
+                (day_z6 + day_z7) >= 120 or                              # z6+: 2 min anaerobic+
+                day_z7 >= 60                                             # z7:  1 min neuromuscular
             )
             if is_hard:
                 hard_days_this_week += 1
@@ -1329,7 +1333,7 @@ class IntervalsSync:
         - moving_time >= 5400 (90 minutes)
 
         Per Maunder et al. (2021), Rothschild et al. (2025): meaningful
-        cardiac drift requires prolonged exercise. 90 min is the practical
+        card drift requires prolonged exercise. 90 min is the practical
         field floor where drift becomes detectable.
 
         Negative decoupling is included — it indicates HR drifted down
@@ -1857,7 +1861,7 @@ class IntervalsSync:
         threshold = baseline * 0.8
         count = 0
         for w in reversed(wellness_7d):
-            hrv = w.get("hrv")
+            hrv = (w.get("hrvSdnn") or w.get("hrv"))
             if hrv is not None and hrv < threshold:
                 count += 1
             else:
@@ -2160,7 +2164,7 @@ class IntervalsSync:
                 "ctl": wellness.get("ctl"),
                 "atl": wellness.get("atl"),
                 "tsb": round(wellness.get("ctl", 0) - wellness.get("atl", 0), 1) if wellness.get("ctl") and wellness.get("atl") else None,
-                "hrv": wellness.get("hrv"),
+                "hrv": (wellness.get("hrvSdnn") or wellness.get("hrv")),
                 "rhr": wellness.get("restingHR"),
                 "sleep_hours": round(wellness.get("sleepSecs", 0) / 3600, 2) if wellness.get("sleepSecs") else None,
                 "sleep_quality": wellness.get("sleepQuality"),
@@ -2230,8 +2234,8 @@ class IntervalsSync:
                 week_seconds += day_seconds
                 week_activities += len(day_activities)
                 
-                if wellness.get("hrv"):
-                    week_hrv.append(wellness["hrv"])
+                if (wellness.get("hrvSdnn") or wellness.get("hrv")):
+                    week_hrv.append((wellness.get("hrvSdnn") or wellness.get("hrv")))
                 if wellness.get("restingHR"):
                     week_rhr.append(wellness["restingHR"])
                 if wellness.get("sleepSecs"):
@@ -2372,8 +2376,8 @@ class IntervalsSync:
                 month_seconds += day_seconds
                 month_activities += len(day_activities)
                 
-                if wellness.get("hrv"):
-                    month_hrv.append(wellness["hrv"])
+                if (wellness.get("hrvSdnn") or wellness.get("hrv")):
+                    month_hrv.append((wellness.get("hrvSdnn") or wellness.get("hrv")))
                 if wellness.get("restingHR"):
                     month_rhr.append(wellness["restingHR"])
                 if wellness.get("weight"):
@@ -2736,7 +2740,7 @@ class IntervalsSync:
             avg_cadence = (act.get("average_cadence") or act.get("avg_cadence") or
                           act.get("icu_average_cadence"))
             avg_temp = (act.get("average_weather_temp") or act.get("average_temp") or 
-                       act.get("avg_temp") or act.get("average_temperature"))
+                        act.get("avg_temp") or act.get("average_temperature"))
             joules = act.get("icu_joules")
             work_kj = round(joules / 1000, 1) if joules else None
             calories = act.get("calories") or act.get("icu_calories")
@@ -3222,7 +3226,7 @@ class IntervalsSync:
         avg_hrv = None
         avg_rhr = None
         if wellness:
-            hrv_values = [w.get("hrv") for w in wellness if w.get("hrv")]
+            hrv_values = [(w.get("hrvSdnn") or w.get("hrv")) for w in wellness if (w.get("hrvSdnn") or w.get("hrv"))]
             rhr_values = [w.get("restingHR") for w in wellness if w.get("restingHR")]
             avg_hrv = round(sum(hrv_values) / len(hrv_values), 1) if hrv_values else None
             avg_rhr = round(sum(rhr_values) / len(rhr_values), 1) if rhr_values else None
@@ -3270,7 +3274,7 @@ class IntervalsSync:
         }
     
     def publish_to_github(self, data: Dict, filepath: str = "latest.json", 
-                         commit_message: str = None) -> str:
+                          commit_message: str = None) -> str:
         """Publish data to GitHub repository"""
         if not self.github_token or not self.github_repo:
             raise ValueError("GitHub token and repo required for publishing")
