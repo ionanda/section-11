@@ -3,9 +3,10 @@
 Intervals.icu → GitHub/Local JSON Export
 Exports training data for LLM access.
 
-Version 3.5.4 - Shield Update
-  - Fixed 'NoneType' crash in Variability Index (VI) comparison for outdoor rides without power.
-  - Added robust HRV Hunter.
+Version 3.5.5 - Full Data Restoration
+  - Restored full rich metrics extraction in _format_activities (Power, HR, Zones, Decoupling, etc.).
+  - Includes robust HRV Hunter (Apple Watch SDNN fix).
+  - Includes NoneType safety for outdoor rides without power/HR data.
 """
 
 import requests
@@ -27,7 +28,7 @@ class IntervalsSync:
     HISTORY_FILE = "history.json"
     UPSTREAM_REPO = "CrankAddict/section-11"
     CHANGELOG_FILE = "changelog.json"
-    VERSION = "3.5.4"
+    VERSION = "3.5.5"
 
     SPORT_FAMILIES = {
         "Ride": "cycling", "VirtualRide": "cycling", "MountainBikeRide": "cycling",
@@ -196,14 +197,17 @@ class IntervalsSync:
         return {
             "READ_THIS_FIRST": {"instruction_for_ai": "Use pre-calculated metrics."},
             "metadata": {"athlete_id": "REDACTED" if anonymize else self.athlete_id, "last_updated": datetime.now().isoformat(), "version": self.VERSION},
-            "alerts": alerts, "history": {"available": True}, "summary": {"total_activities": len(activities_display)},
+            "alerts": alerts, "history": {"available": True}, 
+            "summary": {"total_activities": len(activities_display)},
             "current_status": {
                 "fitness": {"ctl": ctl, "atl": atl, "tsb": tsb, "ramp_rate": smart_ramp_rate, "fitness_source": fitness_source},
                 "thresholds": {"ftp_outdoor": curr_out, "ftp_indoor": curr_in, "eftp": power_model.get("eftp"), "w_prime_kj": power_model.get("w_prime_kj"), "vo2max": vo2max},
                 "current_metrics": {"weight_kg": latest_wellness.get("weight") or athlete.get("icu_weight"), "resting_hr": latest_wellness.get("restingHR"), "hrv": self._extract_hrv(latest_wellness), "sleep_hours": round(latest_wellness.get("sleepSecs", 0)/3600, 2) if latest_wellness.get("sleepSecs") else None}
             },
-            "derived_metrics": derived_metrics, "recent_activities": self._format_activities(activities_display, anonymize),
-            "wellness_data": self._format_wellness(wellness), "planned_workouts": self._format_events(near_future, anonymize)
+            "derived_metrics": derived_metrics, 
+            "recent_activities": self._format_activities(activities_display, anonymize),
+            "wellness_data": self._format_wellness(wellness), 
+            "planned_workouts": self._format_events(near_future, anonymize)
         }
 
     def _calculate_derived_metrics(self, activities_7d, activities_28d, wellness_7d, wellness_extended,
@@ -302,7 +306,6 @@ class IntervalsSync:
                 mt = a.get("moving_time") or 0
                 vi = a.get("icu_variability_index")
                 dec = a.get("icu_hr_decoupling") or a.get("decoupling")
-                # SAFE CHECK: vi is not None before doing comparisons
                 if mt >= 5400 and vi is not None and vi > 0 and vi <= 1.05 and dec is not None:
                     vals.append(dec)
             return vals
@@ -331,8 +334,111 @@ class IntervalsSync:
         if dm.get("acwr") and dm.get("acwr") > 1.35: alerts.append({"metric": "acwr", "severity": "alarm", "context": "ACWR outside safe range."})
         return alerts
 
-    def _format_activities(self, acts, anon):
-        return [{"id": f"act_{i}", "date": a.get("start_date_local"), "type": a.get("type"), "tss": a.get("icu_training_load")} for i, a in enumerate(acts)]
+    def _format_activities(self, activities: List[Dict], anonymize: bool = False) -> List[Dict]:
+        formatted = []
+        for i, act in enumerate(activities):
+            avg_power = (act.get("average_watts") or act.get("avg_watts") or 
+                        act.get("average_power") or act.get("avgWatts") or
+                        act.get("icu_average_watts"))
+            norm_power = (act.get("weighted_average_watts") or act.get("np") or 
+                         act.get("icu_pm_np") or act.get("normalizedPower") or
+                         act.get("icu_weighted_avg_watts"))
+            avg_hr = (act.get("average_heartrate") or act.get("avg_hr") or 
+                     act.get("average_heart_rate") or act.get("avgHr") or
+                     act.get("icu_average_hr"))
+            max_hr = (act.get("max_heartrate") or act.get("max_hr") or 
+                     act.get("max_heart_rate") or act.get("maxHr") or
+                     act.get("icu_max_hr"))
+            
+            avg_cadence = (act.get("average_cadence") or act.get("avg_cadence") or act.get("icu_average_cadence"))
+            avg_temp = (act.get("average_weather_temp") or act.get("average_temp") or act.get("avg_temp") or act.get("average_temperature"))
+            joules = act.get("icu_joules")
+            work_kj = round(joules / 1000, 1) if joules else None
+            calories = act.get("calories") or act.get("icu_calories")
+            variability_index = act.get("icu_variability_index")
+            decoupling = act.get("icu_hr_decoupling") or act.get("decoupling")
+            
+            avg_speed_ms = act.get("average_speed")
+            max_speed_ms = act.get("max_speed")
+            avg_speed = round(avg_speed_ms * 3.6, 1) if avg_speed_ms else None
+            max_speed = round(max_speed_ms * 3.6, 1) if max_speed_ms else None
+            avg_pace = act.get("average_pace") or act.get("icu_pace")
+            
+            weather = act.get("weather_description") or act.get("weather")
+            humidity = act.get("humidity") or act.get("average_humidity")
+            wind_speed = act.get("average_wind_speed") or act.get("wind_speed")
+            
+            carbs_used = act.get("carbs_used")
+            carbs_ingested = act.get("carbs_ingested")
+            
+            hr_zones = {}
+            power_zones = {}
+            
+            icu_hr_zone_times = act.get("icu_hr_zone_times", [])
+            if icu_hr_zone_times and isinstance(icu_hr_zone_times, list):
+                zone_labels = ["z1_time", "z2_time", "z3_time", "z4_time", "z5_time", "z6_time", "z7_time"]
+                for idx, secs in enumerate(icu_hr_zone_times):
+                    if idx < len(zone_labels):
+                        hr_zones[zone_labels[idx]] = secs if secs is not None else 0
+            
+            icu_zone_times = act.get("icu_zone_times", [])
+            if icu_zone_times:
+                for zone in icu_zone_times:
+                    zone_id = zone.get("id", "").lower()
+                    secs = zone.get("secs", 0)
+                    if zone_id in ["z1", "z2", "z3", "z4", "z5", "z6", "z7"]:
+                        power_zones[f"{zone_id}_time"] = secs if secs is not None else 0
+            
+            zone_dist = {}
+            if hr_zones:
+                zone_dist["hr_zones"] = hr_zones
+            if power_zones:
+                zone_dist["power_zones"] = power_zones
+            
+            if not zone_dist:
+                zone_dist = None
+            
+            activity_name = act.get("name", "")
+            if anonymize:
+                if act.get("type", "") in self.OUTDOOR_TYPES:
+                    activity_name = "Training Session"
+            
+            activity = {
+                "id": f"activity_{i+1}" if anonymize else act.get("id", f"unknown_{i+1}"),
+                "date": act.get("start_date_local", "unknown"),
+                "type": act.get("type", "Unknown"),
+                "name": activity_name,
+                "duration_hours": round((act.get("moving_time") or 0) / 3600, 2),
+                "distance_km": round((act.get("distance") or 0) / 1000, 2),
+                "tss": act.get("icu_training_load"),
+                "intensity_factor": act.get("icu_intensity"),
+                "avg_power": avg_power,
+                "normalized_power": norm_power,
+                "avg_hr": avg_hr,
+                "max_hr": max_hr,
+                "avg_cadence": avg_cadence,
+                "avg_speed": avg_speed,
+                "max_speed": max_speed,
+                "avg_pace": avg_pace,
+                "avg_temp": avg_temp,
+                "weather": weather,
+                "humidity": humidity,
+                "wind_speed": wind_speed,
+                "work_kj": work_kj,
+                "calories": calories,
+                "carbs_used": carbs_used,
+                "carbs_ingested": carbs_ingested,
+                "variability_index": variability_index,
+                "decoupling": decoupling,
+                "elevation_m": act.get("total_elevation_gain"),
+                "feel": act.get("feel"),
+                "rpe": act.get("icu_rpe"),
+                "zone_distribution": zone_dist
+            }
+            
+            formatted.append(activity)
+        
+        return formatted
 
     def _format_wellness(self, w):
         return [{"date": x.get("id"), "resting_hr": x.get("restingHR"), "hrv_sdnn": self._extract_hrv(x)} for x in w]
@@ -349,7 +455,7 @@ class IntervalsSync:
         headers = {"Authorization": f"token {self.github_token}"}
         r = requests.get(url, headers=headers)
         sha = r.json()["sha"] if r.status_code == 200 else None
-        payload = {"message": commit_message or "Update v3.5.4", "content": base64.b64encode(json.dumps(data, indent=2).encode()).decode(), "branch": "main"}
+        payload = {"message": commit_message or "Update v3.5.5", "content": base64.b64encode(json.dumps(data, indent=2).encode()).decode(), "branch": "main"}
         if sha: payload["sha"] = sha
         requests.put(url, headers=headers, json=payload)
         return f"https://github.com/{self.github_repo}/blob/main/{filepath}"
@@ -373,6 +479,6 @@ def main():
     
     if args.output: sync.save_to_file(data, args.output)
     else: sync.publish_to_github(data)
-    print("Done! v3.5.4 executed safely.")
+    print("Done! v3.5.5 Full Data restored.")
 
 if __name__ == "__main__": main()
