@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-02-26T13:12:00.064221",
+    "last_updated": "2026-02-26T13:18:49.511246",
     "version": "3.5.5"
   },
   "alerts": [
@@ -22,10 +22,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 0.83,
-      "atl": 4.15,
-      "tsb": -3.32,
-      "ramp_rate": 0.83,
+      "ctl": 4.83,
+      "atl": 17.14,
+      "tsb": -12.31,
+      "ramp_rate": 4.83,
       "fitness_source": "From API"
     },
     "thresholds": {
@@ -49,10 +49,10 @@
     "latest_hrv": 42.0,
     "latest_rhr": 68,
     "acwr": 4.0,
-    "monotony": 0.38,
-    "strain": 14.0,
-    "tss_7d_total": 36.0,
-    "tss_28d_total": 36.0,
+    "monotony": 0.66,
+    "strain": 149.0,
+    "tss_7d_total": 226.0,
+    "tss_28d_total": 226.0,
     "zone_distribution_7d": {
       "z1_hours": 0.12,
       "z2_hours": 0.35,
@@ -137,8 +137,8 @@
       "name": "Training Session",
       "duration_hours": 1.35,
       "distance_km": 29.69,
-      "tss": null,
-      "intensity_factor": null,
+      "tss": 60,
+      "intensity_factor": 66.4279,
       "avg_power": null,
       "normalized_power": null,
       "avg_hr": null,
@@ -169,8 +169,8 @@
       "name": "Training Session",
       "duration_hours": 2.24,
       "distance_km": 44.43,
-      "tss": null,
-      "intensity_factor": null,
+      "tss": 130,
+      "intensity_factor": 75.54679,
       "avg_power": null,
       "normalized_power": null,
       "avg_hr": null,
