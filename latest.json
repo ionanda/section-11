@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-02-28T14:17:30.540578",
+    "last_updated": "2026-02-28T14:22:47.580205",
     "version": "3.5.5"
   },
   "alerts": [
@@ -29,7 +29,7 @@
       "fitness_source": "From API"
     },
     "thresholds": {
-      "ftp_outdoor": 185,
+      "ftp_outdoor": 189,
       "ftp_indoor": null,
       "eftp": 193.0,
       "w_prime_kj": 13.5,
