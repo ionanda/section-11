@@ -1,0 +1,249 @@
+{
+  "READ_THIS_FIRST": {
+    "instruction_for_ai": "Use pre-calculated metrics."
+  },
+  "metadata": {
+    "athlete_id": "REDACTED",
+    "last_updated": "2026-03-01T00:58:16.472216",
+    "version": "3.5.5"
+  },
+  "alerts": [],
+  "history": {
+    "available": true
+  },
+  "summary": {
+    "total_activities": 3
+  },
+  "current_status": {
+    "fitness": {
+      "ctl": 5.39,
+      "atl": 15.66,
+      "tsb": -10.27,
+      "ramp_rate": 0.99,
+      "fitness_source": "From API"
+    },
+    "thresholds": {
+      "ftp_outdoor": 189,
+      "ftp_indoor": null,
+      "eftp": 193.0,
+      "w_prime_kj": 13.5,
+      "vo2max": null
+    },
+    "current_metrics": {
+      "weight_kg": 78.7,
+      "resting_hr": null,
+      "hrv": null,
+      "sleep_hours": null
+    }
+  },
+  "derived_metrics": {
+    "recovery_index": null,
+    "hrv_baseline_7d": 32.0,
+    "rhr_baseline_7d": 71.2,
+    "latest_hrv": null,
+    "latest_rhr": null,
+    "acwr": 1.13,
+    "monotony": 0.58,
+    "strain": 44.0,
+    "tss_7d_total": 75.0,
+    "tss_28d_total": 265.0,
+    "zone_distribution_7d": {
+      "z1_hours": 0.41,
+      "z2_hours": 0.4,
+      "z3_hours": 0.13,
+      "z4_plus_hours": 0.21,
+      "total_hours": 1.27
+    },
+    "hard_days_this_week": 1,
+    "seiler_tid_7d": {
+      "z1_pct": 70.4,
+      "z2_pct": 11.6,
+      "z3_pct": 18.1,
+      "polarization_index": 2.04,
+      "classification": "Polarized"
+    },
+    "seiler_tid_28d": {
+      "z1_pct": 70.4,
+      "z2_pct": 11.6,
+      "z3_pct": 18.1,
+      "polarization_index": 2.04,
+      "classification": "Polarized"
+    },
+    "capability": {
+      "durability": {
+        "mean_decoupling_7d": null,
+        "mean_decoupling_28d": null,
+        "trend": null
+      },
+      "tid_comparison": {
+        "drift": "consistent"
+      }
+    },
+    "phase_detected": "Base"
+  },
+  "recent_activities": [
+    {
+      "id": "activity_1",
+      "date": "2026-02-28T14:42:42",
+      "type": "VirtualRide",
+      "name": "MyWhoosh - Ramp Test - MyWhoosh",
+      "duration_hours": 0.52,
+      "distance_km": 9.82,
+      "tss": 39,
+      "intensity_factor": 87.02702,
+      "avg_power": 125,
+      "normalized_power": 161,
+      "avg_hr": 131,
+      "max_hr": 175,
+      "avg_cadence": 70.957275,
+      "avg_speed": 19.0,
+      "max_speed": 51.9,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 232.7,
+      "calories": 233,
+      "carbs_used": 108,
+      "carbs_ingested": null,
+      "variability_index": 1.288,
+      "decoupling": 9.138836,
+      "elevation_m": 116.4,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 1063,
+          "z2_time": 300,
+          "z3_time": 113,
+          "z4_time": 116,
+          "z5_time": 48,
+          "z6_time": 75,
+          "z7_time": 54
+        },
+        "power_zones": {
+          "z1_time": 1014,
+          "z2_time": 185,
+          "z3_time": 175,
+          "z4_time": 141,
+          "z5_time": 161,
+          "z6_time": 188,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "activity_2",
+      "date": "2026-02-25T16:38:58",
+      "type": "Ride",
+      "name": "Training Session",
+      "duration_hours": 1.55,
+      "distance_km": 14.75,
+      "tss": null,
+      "intensity_factor": null,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": null,
+      "max_hr": null,
+      "avg_cadence": null,
+      "avg_speed": 8.4,
+      "max_speed": 31.3,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": null,
+      "calories": null,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "elevation_m": 192.0,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": null
+    },
+    {
+      "id": "activity_3",
+      "date": "2026-02-25T14:38:41",
+      "type": "VirtualRide",
+      "name": "Afternoon Ciclismo virtual",
+      "duration_hours": 0.63,
+      "distance_km": 16.97,
+      "tss": 36,
+      "intensity_factor": 75.13513,
+      "avg_power": 128,
+      "normalized_power": 139,
+      "avg_hr": null,
+      "max_hr": null,
+      "avg_cadence": 75.0521,
+      "avg_speed": 26.7,
+      "max_speed": 41.6,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 292.2,
+      "calories": 292,
+      "carbs_used": 83,
+      "carbs_ingested": null,
+      "variability_index": 1.0859375,
+      "decoupling": null,
+      "elevation_m": 28.200003,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "power_zones": {
+          "z1_time": 449,
+          "z2_time": 1271,
+          "z3_time": 305,
+          "z4_time": 63,
+          "z5_time": 180,
+          "z6_time": 11,
+          "z7_time": 6
+        }
+      }
+    }
+  ],
+  "wellness_data": [
+    {
+      "date": "2026-02-23",
+      "resting_hr": 70,
+      "hrv_sdnn": 40.0
+    },
+    {
+      "date": "2026-02-24",
+      "resting_hr": 76,
+      "hrv_sdnn": 26.0
+    },
+    {
+      "date": "2026-02-25",
+      "resting_hr": 72,
+      "hrv_sdnn": 25.0
+    },
+    {
+      "date": "2026-02-26",
+      "resting_hr": 70,
+      "hrv_sdnn": 40.0
+    },
+    {
+      "date": "2026-02-27",
+      "resting_hr": 73,
+      "hrv_sdnn": 30.0
+    },
+    {
+      "date": "2026-02-28",
+      "resting_hr": 66,
+      "hrv_sdnn": 31.0
+    },
+    {
+      "date": "2026-03-01",
+      "resting_hr": null,
+      "hrv_sdnn": null
+    }
+  ],
+  "planned_workouts": []
+}
