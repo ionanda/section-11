@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-05T14:45:24.830254",
+    "last_updated": "2026-03-05T15:16:10.085073",
     "version": "3.5.5"
   },
   "alerts": [
@@ -18,15 +18,15 @@
     "available": true
   },
   "summary": {
-    "total_activities": 3
+    "total_activities": 4
   },
   "current_status": {
     "fitness": {
-      "ctl": 11.3,
-      "atl": 32.29,
-      "tsb": -20.99,
-      "ramp_rate": 6.48,
-      "fitness_source": "Decayed from yesterday"
+      "ctl": 12.43,
+      "atl": 38.68,
+      "tsb": -26.25,
+      "ramp_rate": 7.61,
+      "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 189,
@@ -37,43 +37,43 @@
     },
     "current_metrics": {
       "weight_kg": 78.7,
-      "resting_hr": 72,
+      "resting_hr": 70,
       "hrv": 55.0,
       "sleep_hours": 6.89
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.17,
+    "recovery_index": 1.2,
     "hrv_baseline_7d": 44.4,
-    "rhr_baseline_7d": 68,
+    "rhr_baseline_7d": 67.7,
     "latest_hrv": 55.0,
-    "latest_rhr": 72,
-    "acwr": 2.39,
-    "monotony": 0.63,
-    "strain": 212.0,
-    "tss_7d_total": 336.0,
-    "tss_28d_total": 562.0,
+    "latest_rhr": 70,
+    "acwr": 2.52,
+    "monotony": 0.75,
+    "strain": 288.0,
+    "tss_7d_total": 384.0,
+    "tss_28d_total": 610.0,
     "zone_distribution_7d": {
-      "z1_hours": 2.81,
-      "z2_hours": 1.23,
-      "z3_hours": 0.84,
-      "z4_plus_hours": 0.97,
-      "total_hours": 6.4
+      "z1_hours": 2.95,
+      "z2_hours": 1.44,
+      "z3_hours": 1.1,
+      "z4_plus_hours": 1.11,
+      "total_hours": 7.56
     },
     "hard_days_this_week": 3,
     "seiler_tid_7d": {
-      "z1_pct": 69.1,
-      "z2_pct": 14.3,
-      "z3_pct": 16.6,
-      "polarization_index": 1.9,
+      "z1_pct": 66.5,
+      "z2_pct": 16.7,
+      "z3_pct": 16.8,
+      "polarization_index": 1.83,
       "classification": "High Intensity"
     },
     "seiler_tid_28d": {
-      "z1_pct": 69.7,
-      "z2_pct": 14.2,
-      "z3_pct": 16.1,
-      "polarization_index": 1.9,
-      "classification": "High Intensity"
+      "z1_pct": 67.3,
+      "z2_pct": 16.4,
+      "z3_pct": 16.3,
+      "polarization_index": null,
+      "classification": "Pyramidal"
     },
     "capability": {
       "durability": {
@@ -90,6 +90,57 @@
   "recent_activities": [
     {
       "id": "activity_1",
+      "date": "2026-03-05T15:05:54",
+      "type": "VirtualRide",
+      "name": "MyWhoosh - Gravel Motor 45m",
+      "duration_hours": 0.76,
+      "distance_km": 16.21,
+      "tss": 48,
+      "intensity_factor": 79.36508,
+      "avg_power": 139,
+      "normalized_power": 150,
+      "avg_hr": 145,
+      "max_hr": 163,
+      "avg_cadence": 73.20207,
+      "avg_speed": 21.4,
+      "max_speed": 58.8,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 380.2,
+      "calories": 381,
+      "carbs_used": 100,
+      "carbs_ingested": null,
+      "variability_index": 1.0791367,
+      "decoupling": 0.8615431,
+      "elevation_m": 185.4,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 288,
+          "z2_time": 870,
+          "z3_time": 397,
+          "z4_time": 852,
+          "z5_time": 5,
+          "z6_time": 0,
+          "z7_time": 0
+        },
+        "power_zones": {
+          "z1_time": 518,
+          "z2_time": 757,
+          "z3_time": 951,
+          "z4_time": 502,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "activity_2",
       "date": "2026-03-02T15:34:17",
       "type": "Ride",
       "name": "Training Session",
@@ -140,7 +191,7 @@
       }
     },
     {
-      "id": "activity_2",
+      "id": "activity_3",
       "date": "2026-03-01T09:58:02",
       "type": "Ride",
       "name": "Training Session",
@@ -191,7 +242,7 @@
       }
     },
     {
-      "id": "activity_3",
+      "id": "activity_4",
       "date": "2026-02-28T14:42:42",
       "type": "VirtualRide",
       "name": "MyWhoosh - Ramp Test - MyWhoosh",
@@ -275,7 +326,7 @@
     },
     {
       "date": "2026-03-05",
-      "resting_hr": 72,
+      "resting_hr": 70,
       "hrv_sdnn": 55.0
     }
   ],
