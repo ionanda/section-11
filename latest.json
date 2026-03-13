@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-13T16:25:07.905412",
+    "last_updated": "2026-03-13T16:44:43.573637",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -12,15 +12,15 @@
     "available": true
   },
   "summary": {
-    "total_activities": 2
+    "total_activities": 3
   },
   "current_status": {
     "fitness": {
-      "ctl": 12.92,
-      "atl": 22.7,
-      "tsb": -9.78,
-      "ramp_rate": 0.78,
-      "fitness_source": "Decayed from yesterday"
+      "ctl": 13.67,
+      "atl": 26.96,
+      "tsb": -13.29,
+      "ramp_rate": 1.53,
+      "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 189,
@@ -42,30 +42,30 @@
     "rhr_baseline_7d": 63.9,
     "latest_hrv": 71.0,
     "latest_rhr": 68,
-    "acwr": 0.66,
-    "monotony": 0.58,
-    "strain": 70.0,
-    "tss_7d_total": 121.0,
-    "tss_28d_total": 731.0,
+    "acwr": 0.8,
+    "monotony": 0.74,
+    "strain": 113.0,
+    "tss_7d_total": 153.0,
+    "tss_28d_total": 763.0,
     "zone_distribution_7d": {
-      "z1_hours": 0.32,
-      "z2_hours": 1.53,
-      "z3_hours": 0.4,
+      "z1_hours": 0.43,
+      "z2_hours": 2.11,
+      "z3_hours": 0.46,
       "z4_plus_hours": 0.15,
-      "total_hours": 2.93
+      "total_hours": 3.72
     },
     "hard_days_this_week": 1,
     "seiler_tid_7d": {
-      "z1_pct": 76.9,
-      "z2_pct": 16.9,
-      "z3_pct": 6.2,
+      "z1_pct": 80.6,
+      "z2_pct": 14.6,
+      "z3_pct": 4.8,
       "polarization_index": null,
       "classification": "Pyramidal"
     },
     "seiler_tid_28d": {
-      "z1_pct": 69.7,
-      "z2_pct": 16.5,
-      "z3_pct": 13.8,
+      "z1_pct": 71.3,
+      "z2_pct": 15.8,
+      "z3_pct": 12.8,
       "polarization_index": null,
       "classification": "Pyramidal"
     },
@@ -84,6 +84,57 @@
   "recent_activities": [
     {
       "id": "activity_1",
+      "date": "2026-03-13T16:55:36",
+      "type": "VirtualRide",
+      "name": "MyWhoosh - Zona 2, pero cada 5 minutos meteremos 30 segundos de alta cadencia (m\u00e1s de 100 rpm)",
+      "duration_hours": 0.75,
+      "distance_km": 11.69,
+      "tss": 32,
+      "intensity_factor": 65.07937,
+      "avg_power": 120,
+      "normalized_power": 123,
+      "avg_hr": 136,
+      "max_hr": 153,
+      "avg_cadence": 80.22818,
+      "avg_speed": 15.6,
+      "max_speed": 52.8,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 324.8,
+      "calories": 325,
+      "carbs_used": 84,
+      "carbs_ingested": null,
+      "variability_index": 1.025,
+      "decoupling": 6.186027,
+      "elevation_m": 218.20001,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 548,
+          "z2_time": 2033,
+          "z3_time": 124,
+          "z4_time": 1,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        },
+        "power_zones": {
+          "z1_time": 413,
+          "z2_time": 2085,
+          "z3_time": 197,
+          "z4_time": 11,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "activity_2",
       "date": "2026-03-11T16:16:48",
       "type": "VirtualRide",
       "name": "MyWhoosh - Gravel Motor Nivel 2 (3x10)",
@@ -125,7 +176,7 @@
       }
     },
     {
-      "id": "activity_2",
+      "id": "activity_3",
       "date": "2026-03-09T15:41:20",
       "type": "VirtualRide",
       "name": "MyWhoosh - Z2 1.45h",
