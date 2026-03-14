@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-14T04:58:28.869054",
+    "last_updated": "2026-03-14T05:09:33.294565",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -30,7 +30,7 @@
       "vo2max": null
     },
     "current_metrics": {
-      "weight_kg": 77.85,
+      "weight_kg": 76.5,
       "resting_hr": null,
       "hrv": 28.0,
       "sleep_hours": null
