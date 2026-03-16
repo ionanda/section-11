@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-15T23:53:40.505073",
+    "last_updated": "2026-03-16T00:16:46.993039",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -12,53 +12,53 @@
     "available": true
   },
   "summary": {
-    "total_activities": 3
+    "total_activities": 2
   },
   "current_status": {
     "fitness": {
-      "ctl": 13.03,
-      "atl": 20.26,
-      "tsb": -7.23,
-      "ramp_rate": 1.46,
+      "ctl": 12.73,
+      "atl": 17.56,
+      "tsb": -4.83,
+      "ramp_rate": -0.22,
       "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 189,
       "ftp_indoor": null,
-      "eftp": 193.0,
-      "w_prime_kj": 13.5,
-      "vo2max": 37.85
+      "eftp": 192.8,
+      "w_prime_kj": 13.4,
+      "vo2max": null
     },
     "current_metrics": {
       "weight_kg": 76.5,
-      "resting_hr": 63,
-      "hrv": 27.0,
-      "sleep_hours": 7.34
+      "resting_hr": null,
+      "hrv": null,
+      "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.57,
-    "hrv_baseline_7d": 49.0,
-    "rhr_baseline_7d": 65.3,
-    "latest_hrv": 27.0,
-    "latest_rhr": 63,
-    "acwr": 0.8,
-    "monotony": 0.74,
-    "strain": 113.0,
-    "tss_7d_total": 153.0,
+    "recovery_index": null,
+    "hrv_baseline_7d": 48.5,
+    "rhr_baseline_7d": 65.7,
+    "latest_hrv": null,
+    "latest_rhr": null,
+    "acwr": 0.44,
+    "monotony": 0.57,
+    "strain": 47.0,
+    "tss_7d_total": 83.0,
     "tss_28d_total": 763.0,
     "zone_distribution_7d": {
-      "z1_hours": 0.43,
-      "z2_hours": 2.11,
-      "z3_hours": 0.46,
+      "z1_hours": 0.22,
+      "z2_hours": 0.72,
+      "z3_hours": 0.41,
       "z4_plus_hours": 0.15,
-      "total_hours": 3.72
+      "total_hours": 2.04
     },
     "hard_days_this_week": 1,
     "seiler_tid_7d": {
-      "z1_pct": 80.6,
-      "z2_pct": 14.6,
-      "z3_pct": 4.8,
+      "z1_pct": 62.9,
+      "z2_pct": 27.1,
+      "z3_pct": 10.0,
       "polarization_index": null,
       "classification": "Pyramidal"
     },
@@ -79,7 +79,7 @@
         "drift": "consistent"
       }
     },
-    "phase_detected": "Overreached"
+    "phase_detected": "Base"
   },
   "recent_activities": [
     {
@@ -174,65 +174,9 @@
           "z7_time": 0
         }
       }
-    },
-    {
-      "id": "activity_3",
-      "date": "2026-03-09T15:41:20",
-      "type": "VirtualRide",
-      "name": "MyWhoosh - Z2 1.45h",
-      "duration_hours": 1.64,
-      "distance_km": 36.87,
-      "tss": 70,
-      "intensity_factor": 65.07937,
-      "avg_power": 117,
-      "normalized_power": 123,
-      "avg_hr": 132,
-      "max_hr": 148,
-      "avg_cadence": 72.519516,
-      "avg_speed": 22.4,
-      "max_speed": 56.3,
-      "avg_pace": null,
-      "avg_temp": null,
-      "weather": null,
-      "humidity": null,
-      "wind_speed": null,
-      "work_kj": 692.9,
-      "calories": 694,
-      "carbs_used": 179,
-      "carbs_ingested": null,
-      "variability_index": 1.051282,
-      "decoupling": 3.3028433,
-      "elevation_m": 248.2,
-      "feel": null,
-      "rpe": null,
-      "zone_distribution": {
-        "hr_zones": {
-          "z1_time": 1545,
-          "z2_time": 3947,
-          "z3_time": 23,
-          "z4_time": 0,
-          "z5_time": 0,
-          "z6_time": 0,
-          "z7_time": 0
-        },
-        "power_zones": {
-          "z1_time": 752,
-          "z2_time": 4978,
-          "z3_time": 184,
-          "z4_time": 2,
-          "z5_time": 0,
-          "z6_time": 0,
-          "z7_time": 0
-        }
-      }
     }
   ],
   "wellness_data": [
-    {
-      "date": "2026-03-09",
-      "resting_hr": 63,
-      "hrv_sdnn": 52.0
-    },
     {
       "date": "2026-03-10",
       "resting_hr": 66,
@@ -262,6 +206,11 @@
       "date": "2026-03-15",
       "resting_hr": 63,
       "hrv_sdnn": 27.0
+    },
+    {
+      "date": "2026-03-16",
+      "resting_hr": null,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
