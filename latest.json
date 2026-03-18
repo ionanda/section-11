@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-17T23:55:19.716976",
+    "last_updated": "2026-03-18T00:17:27.942682",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -12,53 +12,53 @@
     "available": true
   },
   "summary": {
-    "total_activities": 3
+    "total_activities": 2
   },
   "current_status": {
     "fitness": {
-      "ctl": 13.75,
-      "atl": 22.68,
-      "tsb": -8.93,
-      "ramp_rate": 1.1,
+      "ctl": 13.42,
+      "atl": 19.66,
+      "tsb": -6.24,
+      "ramp_rate": -0.12,
       "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 189,
       "ftp_indoor": null,
-      "eftp": 192.8,
+      "eftp": 192.6,
       "w_prime_kj": 13.4,
       "vo2max": null
     },
     "current_metrics": {
       "weight_kg": 76.5,
-      "resting_hr": 69,
-      "hrv": 42.0,
-      "sleep_hours": 3.58
+      "resting_hr": null,
+      "hrv": null,
+      "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.88,
-    "hrv_baseline_7d": 46.1,
-    "rhr_baseline_7d": 66.3,
-    "latest_hrv": 42.0,
-    "latest_rhr": 69,
-    "acwr": 0.68,
-    "monotony": 0.77,
-    "strain": 107.0,
-    "tss_7d_total": 139.0,
+    "recovery_index": null,
+    "hrv_baseline_7d": 46.0,
+    "rhr_baseline_7d": 67,
+    "latest_hrv": null,
+    "latest_rhr": null,
+    "acwr": 0.43,
+    "monotony": 0.56,
+    "strain": 49.0,
+    "tss_7d_total": 88.0,
     "tss_28d_total": 819.0,
     "zone_distribution_7d": {
-      "z1_hours": 0.48,
-      "z2_hours": 1.35,
-      "z3_hours": 0.59,
-      "z4_plus_hours": 0.21,
-      "total_hours": 3.41
+      "z1_hours": 0.37,
+      "z2_hours": 1.21,
+      "z3_hours": 0.23,
+      "z4_plus_hours": 0.07,
+      "total_hours": 2.16
     },
-    "hard_days_this_week": 1,
+    "hard_days_this_week": 0,
     "seiler_tid_7d": {
-      "z1_pct": 69.4,
-      "z2_pct": 22.4,
-      "z3_pct": 8.2,
+      "z1_pct": 83.9,
+      "z2_pct": 12.5,
+      "z3_pct": 3.6,
       "polarization_index": null,
       "classification": "Pyramidal"
     },
@@ -183,56 +183,9 @@
           "z7_time": 0
         }
       }
-    },
-    {
-      "id": "activity_3",
-      "date": "2026-03-11T16:16:48",
-      "type": "VirtualRide",
-      "name": "MyWhoosh - Gravel Motor Nivel 2 (3x10)",
-      "duration_hours": 0.75,
-      "distance_km": 10.24,
-      "tss": 51,
-      "intensity_factor": 82.53968,
-      "avg_power": 149,
-      "normalized_power": 156,
-      "avg_hr": null,
-      "max_hr": null,
-      "avg_cadence": 74.51645,
-      "avg_speed": 13.6,
-      "max_speed": 33.4,
-      "avg_pace": null,
-      "avg_temp": null,
-      "weather": null,
-      "humidity": null,
-      "wind_speed": null,
-      "work_kj": 402.8,
-      "calories": 403,
-      "carbs_used": 96,
-      "carbs_ingested": null,
-      "variability_index": 1.0469799,
-      "decoupling": null,
-      "elevation_m": 311.0,
-      "feel": null,
-      "rpe": null,
-      "zone_distribution": {
-        "power_zones": {
-          "z1_time": 387,
-          "z2_time": 516,
-          "z3_time": 1272,
-          "z4_time": 530,
-          "z5_time": 0,
-          "z6_time": 0,
-          "z7_time": 0
-        }
-      }
     }
   ],
   "wellness_data": [
-    {
-      "date": "2026-03-11",
-      "resting_hr": 62,
-      "hrv_sdnn": 47.0
-    },
     {
       "date": "2026-03-12",
       "resting_hr": 63,
@@ -262,6 +215,11 @@
       "date": "2026-03-17",
       "resting_hr": 69,
       "hrv_sdnn": 42.0
+    },
+    {
+      "date": "2026-03-18",
+      "resting_hr": null,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
