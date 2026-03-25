@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-24T23:55:02.225113",
+    "last_updated": "2026-03-25T00:15:54.624635",
     "version": "3.5.5"
   },
   "alerts": [
@@ -22,10 +22,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 23.21,
-      "atl": 48.93,
-      "tsb": -25.72,
-      "ramp_rate": 9.47,
+      "ctl": 22.67,
+      "atl": 42.42,
+      "tsb": -19.75,
+      "ramp_rate": 9.24,
       "fitness_source": "From API"
     },
     "thresholds": {
@@ -37,22 +37,22 @@
     },
     "current_metrics": {
       "weight_kg": 77.05,
-      "resting_hr": 64,
-      "hrv": 42.0,
-      "sleep_hours": 8.36
+      "resting_hr": null,
+      "hrv": null,
+      "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.97,
-    "hrv_baseline_7d": 45.1,
-    "rhr_baseline_7d": 67,
-    "latest_hrv": 42.0,
-    "latest_rhr": 64,
-    "acwr": 1.85,
+    "recovery_index": null,
+    "hrv_baseline_7d": 43.7,
+    "rhr_baseline_7d": 66.7,
+    "latest_hrv": null,
+    "latest_rhr": null,
+    "acwr": 1.91,
     "monotony": 0.79,
     "strain": 428.0,
     "tss_7d_total": 542.0,
-    "tss_28d_total": 1171.0,
+    "tss_28d_total": 1135.0,
     "zone_distribution_7d": {
       "z1_hours": 3.63,
       "z2_hours": 1.55,
@@ -69,9 +69,9 @@
       "classification": "Polarized"
     },
     "seiler_tid_28d": {
-      "z1_pct": 67.9,
+      "z1_pct": 67.7,
       "z2_pct": 14.9,
-      "z3_pct": 17.2,
+      "z3_pct": 17.4,
       "polarization_index": 1.9,
       "classification": "High Intensity"
     },
@@ -244,11 +244,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-03-18",
-      "resting_hr": 69,
-      "hrv_sdnn": 54.0
-    },
-    {
       "date": "2026-03-19",
       "resting_hr": 67,
       "hrv_sdnn": 52.0
@@ -277,6 +272,11 @@
       "date": "2026-03-24",
       "resting_hr": 64,
       "hrv_sdnn": 42.0
+    },
+    {
+      "date": "2026-03-25",
+      "resting_hr": null,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
