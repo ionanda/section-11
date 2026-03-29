@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-29T06:47:57.389954",
+    "last_updated": "2026-03-29T07:22:10.186969",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -12,22 +12,22 @@
     "available": true
   },
   "summary": {
-    "total_activities": 0
+    "total_activities": 1
   },
   "current_status": {
     "fitness": {
-      "ctl": 21.07,
-      "atl": 26.26,
-      "tsb": -5.19,
-      "ramp_rate": -3.28,
-      "fitness_source": "Decayed from yesterday"
+      "ctl": 23.92,
+      "atl": 42.72,
+      "tsb": -18.8,
+      "ramp_rate": -0.42,
+      "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 189,
       "ftp_indoor": null,
       "eftp": 192.0,
       "w_prime_kj": 13.4,
-      "vo2max": null
+      "vo2max": 40.18
     },
     "current_metrics": {
       "weight_kg": 77.05,
@@ -42,28 +42,31 @@
     "rhr_baseline_7d": 63,
     "latest_hrv": 20.0,
     "latest_rhr": 61,
-    "acwr": 0.0,
-    "monotony": null,
-    "strain": null,
-    "tss_7d_total": 0,
-    "tss_28d_total": 896.0,
+    "acwr": 0.09,
+    "monotony": 0.38,
+    "strain": 8.0,
+    "tss_7d_total": 20.0,
+    "tss_28d_total": 916.0,
     "zone_distribution_7d": {
-      "z1_hours": 0.0,
-      "z2_hours": 0.0,
+      "z1_hours": 0.23,
+      "z2_hours": 0.32,
       "z3_hours": 0.0,
-      "z4_plus_hours": 0.0,
-      "total_hours": 0.0
+      "z4_plus_hours": 0.02,
+      "total_hours": 0.57
     },
     "hard_days_this_week": 0,
     "seiler_tid_7d": {
-      "classification": null,
-      "polarization_index": null
+      "z1_pct": 96.9,
+      "z2_pct": 0.4,
+      "z3_pct": 2.7,
+      "polarization_index": 2.42,
+      "classification": "Polarized"
     },
     "seiler_tid_28d": {
-      "z1_pct": 68.2,
-      "z2_pct": 14.7,
-      "z3_pct": 17.1,
-      "polarization_index": 1.9,
+      "z1_pct": 69.2,
+      "z2_pct": 14.2,
+      "z3_pct": 16.6,
+      "polarization_index": 1.91,
       "classification": "High Intensity"
     },
     "capability": {
@@ -78,7 +81,50 @@
     },
     "phase_detected": "Overreached"
   },
-  "recent_activities": [],
+  "recent_activities": [
+    {
+      "id": "activity_1",
+      "date": "2026-03-29T08:20:42",
+      "type": "VirtualRide",
+      "name": "Morning Ciclismo virtual",
+      "duration_hours": 0.57,
+      "distance_km": 14.49,
+      "tss": 20,
+      "intensity_factor": 58.73016,
+      "avg_power": 102,
+      "normalized_power": 111,
+      "avg_hr": null,
+      "max_hr": null,
+      "avg_cadence": 78.69512,
+      "avg_speed": null,
+      "max_speed": 31.5,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 220.6,
+      "calories": 221,
+      "carbs_used": 78,
+      "carbs_ingested": null,
+      "variability_index": 1.0882353,
+      "decoupling": null,
+      "elevation_m": 0.0,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "power_zones": {
+          "z1_time": 833,
+          "z2_time": 1163,
+          "z3_time": 8,
+          "z4_time": 8,
+          "z5_time": 22,
+          "z6_time": 26,
+          "z7_time": 0
+        }
+      }
+    }
+  ],
   "wellness_data": [
     {
       "date": "2026-03-23",
