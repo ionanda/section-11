@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-01T23:57:19.419768",
+    "last_updated": "2026-04-02T00:40:07.188462",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -16,10 +16,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 24.88,
-      "atl": 40.71,
-      "tsb": -15.83,
-      "ramp_rate": 2.22,
+      "ctl": 24.3,
+      "atl": 35.29,
+      "tsb": -10.99,
+      "ramp_rate": 2.16,
       "fitness_source": "From API"
     },
     "thresholds": {
@@ -31,22 +31,22 @@
     },
     "current_metrics": {
       "weight_kg": 76.65,
-      "resting_hr": 63,
-      "hrv": 46.0,
-      "sleep_hours": 1.23
+      "resting_hr": null,
+      "hrv": null,
+      "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.88,
-    "hrv_baseline_7d": 52.6,
-    "rhr_baseline_7d": 63.6,
-    "latest_hrv": 46.0,
-    "latest_rhr": 63,
-    "acwr": 0.97,
+    "recovery_index": null,
+    "hrv_baseline_7d": 49.3,
+    "rhr_baseline_7d": 63.7,
+    "latest_hrv": null,
+    "latest_rhr": null,
+    "acwr": 1.01,
     "monotony": 0.7,
     "strain": 178.0,
     "tss_7d_total": 255.0,
-    "tss_28d_total": 1054.0,
+    "tss_28d_total": 1006.0,
     "zone_distribution_7d": {
       "z1_hours": 1.14,
       "z2_hours": 2.42,
@@ -63,10 +63,10 @@
       "classification": "Pyramidal"
     },
     "seiler_tid_28d": {
-      "z1_pct": 69.6,
-      "z2_pct": 14.9,
-      "z3_pct": 15.5,
-      "polarization_index": 1.86,
+      "z1_pct": 70.6,
+      "z2_pct": 14.1,
+      "z3_pct": 15.3,
+      "polarization_index": 1.89,
       "classification": "High Intensity"
     },
     "capability": {
@@ -271,11 +271,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-03-26",
-      "resting_hr": 63,
-      "hrv_sdnn": 72.0
-    },
-    {
       "date": "2026-03-27",
       "resting_hr": 65,
       "hrv_sdnn": 72.0
@@ -304,6 +299,11 @@
       "date": "2026-04-01",
       "resting_hr": 63,
       "hrv_sdnn": 46.0
+    },
+    {
+      "date": "2026-04-02",
+      "resting_hr": null,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
