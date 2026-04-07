@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-06T23:58:15.173117",
+    "last_updated": "2026-04-07T00:53:42.770485",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -16,10 +16,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 30.3,
-      "atl": 64.01,
-      "tsb": -33.71,
-      "ramp_rate": 5.14,
+      "ctl": 29.59,
+      "atl": 55.49,
+      "tsb": -25.9,
+      "ramp_rate": 5.02,
       "fitness_source": "From API"
     },
     "thresholds": {
@@ -31,17 +31,17 @@
     },
     "current_metrics": {
       "weight_kg": 76.65,
-      "resting_hr": 71,
-      "hrv": 22.0,
-      "sleep_hours": 7.65
+      "resting_hr": null,
+      "hrv": null,
+      "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.51,
-    "hrv_baseline_7d": 39.3,
-    "rhr_baseline_7d": 64.3,
-    "latest_hrv": 22.0,
-    "latest_rhr": 71,
+    "recovery_index": null,
+    "hrv_baseline_7d": 35.3,
+    "rhr_baseline_7d": 64.5,
+    "latest_hrv": null,
+    "latest_rhr": null,
     "acwr": 1.21,
     "monotony": 0.63,
     "strain": 246.0,
@@ -79,7 +79,7 @@
         "drift": "consistent"
       }
     },
-    "phase_detected": "Overreached"
+    "phase_detected": "Base"
   },
   "recent_activities": [
     {
@@ -262,11 +262,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-03-31",
-      "resting_hr": 63,
-      "hrv_sdnn": 63.0
-    },
-    {
       "date": "2026-04-01",
       "resting_hr": 63,
       "hrv_sdnn": 44.0
@@ -295,6 +290,11 @@
       "date": "2026-04-06",
       "resting_hr": 71,
       "hrv_sdnn": 22.0
+    },
+    {
+      "date": "2026-04-07",
+      "resting_hr": null,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
