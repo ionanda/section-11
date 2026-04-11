@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-11T10:24:39.120661",
+    "last_updated": "2026-04-11T10:33:56.996600",
     "version": "3.5.5"
   },
   "alerts": [
@@ -22,15 +22,15 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 32.71,
-      "atl": 64.22,
-      "tsb": -31.51,
-      "ramp_rate": 7.94,
+      "ctl": 31.51,
+      "atl": 57.43,
+      "tsb": -25.92,
+      "ramp_rate": 6.74,
       "fitness_source": "From API"
     },
     "thresholds": {
-      "ftp_outdoor": 189,
-      "ftp_indoor": null,
+      "ftp_outdoor": 212,
+      "ftp_indoor": 195,
       "eftp": 212.0,
       "w_prime_kj": 17.8,
       "vo2max": null
@@ -48,31 +48,31 @@
     "rhr_baseline_7d": 61.2,
     "latest_hrv": null,
     "latest_rhr": null,
-    "acwr": 1.46,
+    "acwr": 1.37,
     "monotony": 0.64,
-    "strain": 340.0,
-    "tss_7d_total": 532.0,
-    "tss_28d_total": 1453.0,
+    "strain": 308.0,
+    "tss_7d_total": 481.0,
+    "tss_28d_total": 1402.0,
     "zone_distribution_7d": {
-      "z1_hours": 2.4,
-      "z2_hours": 0.8,
-      "z3_hours": 0.66,
-      "z4_plus_hours": 2.61,
-      "total_hours": 7.12
+      "z1_hours": 2.56,
+      "z2_hours": 0.92,
+      "z3_hours": 0.64,
+      "z4_plus_hours": 2.35,
+      "total_hours": 7.09
     },
     "hard_days_this_week": 2,
     "seiler_tid_7d": {
-      "z1_pct": 49.5,
-      "z2_pct": 10.2,
-      "z3_pct": 40.3,
+      "z1_pct": 53.7,
+      "z2_pct": 10.0,
+      "z3_pct": 36.3,
       "polarization_index": 2.29,
       "classification": "Polarized"
     },
     "seiler_tid_28d": {
-      "z1_pct": 64.1,
+      "z1_pct": 65.4,
       "z2_pct": 12.2,
-      "z3_pct": 23.6,
-      "polarization_index": 2.09,
+      "z3_pct": 22.5,
+      "polarization_index": 2.08,
       "classification": "Polarized"
     },
     "capability": {
@@ -95,8 +95,8 @@
       "name": "Training Session",
       "duration_hours": 2.82,
       "distance_km": 57.24,
-      "tss": 247,
-      "intensity_factor": 93.650795,
+      "tss": 196,
+      "intensity_factor": 83.49056,
       "avg_power": 142,
       "normalized_power": 177,
       "avg_hr": 141,
@@ -129,13 +129,13 @@
           "z7_time": 144
         },
         "power_zones": {
-          "z1_time": 2939,
-          "z2_time": 1779,
-          "z3_time": 1555,
-          "z4_time": 1276,
-          "z5_time": 1040,
-          "z6_time": 1203,
-          "z7_time": 352
+          "z1_time": 3495,
+          "z2_time": 2214,
+          "z3_time": 1506,
+          "z4_time": 1230,
+          "z5_time": 917,
+          "z6_time": 675,
+          "z7_time": 107
         }
       }
     },
