@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-12T17:24:46.885738",
+    "last_updated": "2026-04-12T17:43:39.383975",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -32,15 +32,15 @@
     "current_metrics": {
       "weight_kg": 78.45,
       "resting_hr": 61,
-      "hrv": 49.0,
+      "hrv": 58.0,
       "sleep_hours": 6.91
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.02,
-    "hrv_baseline_7d": 48.7,
+    "recovery_index": 1.18,
+    "hrv_baseline_7d": 50.0,
     "rhr_baseline_7d": 62.1,
-    "latest_hrv": 49.0,
+    "latest_hrv": 58.0,
     "latest_rhr": 61,
     "acwr": 1.27,
     "monotony": 0.58,
@@ -219,7 +219,7 @@
     {
       "date": "2026-04-12",
       "resting_hr": 61,
-      "hrv_sdnn": 49.0
+      "hrv_sdnn": 58.0
     }
   ],
   "planned_workouts": []
