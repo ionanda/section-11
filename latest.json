@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-15T23:49:42.234914",
+    "last_updated": "2026-04-16T00:23:40.455569",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -16,10 +16,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 30.45,
-      "atl": 41.29,
-      "tsb": -10.84,
-      "ramp_rate": 1.56,
+      "ctl": 29.74,
+      "atl": 35.8,
+      "tsb": -6.06,
+      "ramp_rate": 1.52,
       "fitness_source": "From API"
     },
     "thresholds": {
@@ -31,22 +31,22 @@
     },
     "current_metrics": {
       "weight_kg": 78.45,
-      "resting_hr": 63,
-      "hrv": 62.0,
-      "sleep_hours": 7.95
+      "resting_hr": null,
+      "hrv": null,
+      "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.26,
-    "hrv_baseline_7d": 49.9,
-    "rhr_baseline_7d": 63.7,
-    "latest_hrv": 62.0,
-    "latest_rhr": 63,
-    "acwr": 0.77,
+    "recovery_index": null,
+    "hrv_baseline_7d": 47.7,
+    "rhr_baseline_7d": 65,
+    "latest_hrv": null,
+    "latest_rhr": null,
+    "acwr": 0.89,
     "monotony": 0.55,
     "strain": 151.0,
     "tss_7d_total": 275.0,
-    "tss_28d_total": 1425.0,
+    "tss_28d_total": 1236.0,
     "zone_distribution_7d": {
       "z1_hours": 1.85,
       "z2_hours": 1.23,
@@ -63,10 +63,10 @@
       "classification": "Polarized"
     },
     "seiler_tid_28d": {
-      "z1_pct": 66.1,
+      "z1_pct": 65.6,
       "z2_pct": 11.4,
-      "z3_pct": 22.5,
-      "polarization_index": 2.11,
+      "z3_pct": 23.0,
+      "polarization_index": 2.12,
       "classification": "Polarized"
     },
     "capability": {
@@ -229,11 +229,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-04-09",
-      "resting_hr": 56,
-      "hrv_sdnn": 63.0
-    },
-    {
       "date": "2026-04-10",
       "resting_hr": 65,
       "hrv_sdnn": 49.0
@@ -262,6 +257,11 @@
       "date": "2026-04-15",
       "resting_hr": 63,
       "hrv_sdnn": 62.0
+    },
+    {
+      "date": "2026-04-16",
+      "resting_hr": null,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
