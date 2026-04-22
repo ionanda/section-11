@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-22T11:47:46.245454",
+    "last_updated": "2026-04-22T12:19:11.442476",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -12,15 +12,15 @@
     "available": true
   },
   "summary": {
-    "total_activities": 1
+    "total_activities": 2
   },
   "current_status": {
     "fitness": {
-      "ctl": 31.72,
-      "atl": 36.09,
-      "tsb": -4.37,
-      "ramp_rate": 1.95,
-      "fitness_source": "Decayed from yesterday"
+      "ctl": 32.27,
+      "atl": 39.15,
+      "tsb": -6.88,
+      "ramp_rate": 1.81,
+      "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 212,
@@ -42,31 +42,31 @@
     "rhr_baseline_7d": 63,
     "latest_hrv": 32.0,
     "latest_rhr": 68,
-    "acwr": 0.96,
-    "monotony": 0.38,
-    "strain": 106.0,
-    "tss_7d_total": 278.0,
-    "tss_28d_total": 1161.0,
+    "acwr": 1.02,
+    "monotony": 0.41,
+    "strain": 123.0,
+    "tss_7d_total": 301.0,
+    "tss_28d_total": 1184.0,
     "zone_distribution_7d": {
-      "z1_hours": 1.41,
-      "z2_hours": 0.56,
+      "z1_hours": 1.51,
+      "z2_hours": 0.96,
       "z3_hours": 0.53,
       "z4_plus_hours": 1.27,
-      "total_hours": 4.26
+      "total_hours": 4.76
     },
     "hard_days_this_week": 1,
     "seiler_tid_7d": {
-      "z1_pct": 52.2,
-      "z2_pct": 14.0,
-      "z3_pct": 33.7,
-      "polarization_index": 2.1,
+      "z1_pct": 57.8,
+      "z2_pct": 12.4,
+      "z3_pct": 29.8,
+      "polarization_index": 2.14,
       "classification": "Polarized"
     },
     "seiler_tid_28d": {
-      "z1_pct": 65.0,
-      "z2_pct": 11.0,
-      "z3_pct": 24.0,
-      "polarization_index": 2.15,
+      "z1_pct": 65.9,
+      "z2_pct": 10.7,
+      "z3_pct": 23.3,
+      "polarization_index": 2.16,
       "classification": "Polarized"
     },
     "capability": {
@@ -84,6 +84,48 @@
   "recent_activities": [
     {
       "id": "activity_1",
+      "date": "2026-04-22T13:47:07",
+      "type": "VirtualRide",
+      "name": "MyWhoosh - suabe",
+      "duration_hours": 0.5,
+      "distance_km": 10.04,
+      "tss": 23,
+      "intensity_factor": 67.17949,
+      "avg_power": 127,
+      "normalized_power": 131,
+      "avg_hr": null,
+      "max_hr": null,
+      "avg_cadence": 72.0897,
+      "avg_speed": 20.0,
+      "max_speed": 52.5,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 229.5,
+      "calories": 230,
+      "carbs_used": 64,
+      "carbs_ingested": null,
+      "variability_index": 1.031496,
+      "decoupling": null,
+      "elevation_m": 124.4,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "power_zones": {
+          "z1_time": 347,
+          "z2_time": 1459,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "activity_2",
       "date": "2026-04-18T09:11:43",
       "type": "Ride",
       "name": "Training Session",
