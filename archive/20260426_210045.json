@@ -1,0 +1,259 @@
+{
+  "READ_THIS_FIRST": {
+    "instruction_for_ai": "Use pre-calculated metrics."
+  },
+  "metadata": {
+    "athlete_id": "REDACTED",
+    "last_updated": "2026-04-26T20:44:29.074477",
+    "version": "3.5.5"
+  },
+  "alerts": [],
+  "history": {
+    "available": true
+  },
+  "summary": {
+    "total_activities": 3
+  },
+  "current_status": {
+    "fitness": {
+      "ctl": 32.03,
+      "atl": 36.01,
+      "tsb": -3.98,
+      "ramp_rate": -2.04,
+      "fitness_source": "From API"
+    },
+    "thresholds": {
+      "ftp_outdoor": 212,
+      "ftp_indoor": 195,
+      "eftp": 211.6,
+      "w_prime_kj": 17.8,
+      "vo2max": null
+    },
+    "current_metrics": {
+      "weight_kg": 75.7,
+      "resting_hr": 65,
+      "hrv": 30.0,
+      "sleep_hours": 6.74
+    }
+  },
+  "derived_metrics": {
+    "recovery_index": 0.78,
+    "hrv_baseline_7d": 39.4,
+    "rhr_baseline_7d": 66.4,
+    "latest_hrv": 30.0,
+    "latest_rhr": 65,
+    "acwr": 0.48,
+    "monotony": 0.66,
+    "strain": 92.0,
+    "tss_7d_total": 140.0,
+    "tss_28d_total": 1176.0,
+    "zone_distribution_7d": {
+      "z1_hours": 0.72,
+      "z2_hours": 0.63,
+      "z3_hours": 0.93,
+      "z4_plus_hours": 0.25,
+      "total_hours": 3.13
+    },
+    "hard_days_this_week": 1,
+    "seiler_tid_7d": {
+      "z1_pct": 53.6,
+      "z2_pct": 36.7,
+      "z3_pct": 9.7,
+      "polarization_index": null,
+      "classification": "Pyramidal"
+    },
+    "seiler_tid_28d": {
+      "z1_pct": 63.4,
+      "z2_pct": 12.6,
+      "z3_pct": 24.1,
+      "polarization_index": 2.08,
+      "classification": "Polarized"
+    },
+    "capability": {
+      "durability": {
+        "mean_decoupling_7d": null,
+        "mean_decoupling_28d": null,
+        "trend": null
+      },
+      "tid_comparison": {
+        "drift": "consistent"
+      }
+    },
+    "phase_detected": "Base"
+  },
+  "recent_activities": [
+    {
+      "id": "activity_1",
+      "date": "2026-04-26T17:19:34",
+      "type": "VirtualRide",
+      "name": "MyWhoosh - Subida a un Puerto (Sweet Spot)",
+      "duration_hours": 1.33,
+      "distance_km": 26.77,
+      "tss": 81,
+      "intensity_factor": 77.948715,
+      "avg_power": 130,
+      "normalized_power": 152,
+      "avg_hr": 136,
+      "max_hr": 163,
+      "avg_cadence": 67.60076,
+      "avg_speed": 20.0,
+      "max_speed": 65.0,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 622.8,
+      "calories": 624,
+      "carbs_used": 190,
+      "carbs_ingested": null,
+      "variability_index": 1.1692308,
+      "decoupling": 8.42993,
+      "elevation_m": 298.4,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 1674,
+          "z2_time": 1100,
+          "z3_time": 864,
+          "z4_time": 957,
+          "z5_time": 4,
+          "z6_time": 0,
+          "z7_time": 0
+        },
+        "power_zones": {
+          "z1_time": 1476,
+          "z2_time": 778,
+          "z3_time": 1667,
+          "z4_time": 876,
+          "z5_time": 9,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "activity_2",
+      "date": "2026-04-23T11:54:37",
+      "type": "VirtualRide",
+      "name": "MyWhoosh - Z3",
+      "duration_hours": 0.69,
+      "distance_km": 17.58,
+      "tss": 36,
+      "intensity_factor": 72.30769,
+      "avg_power": 128,
+      "normalized_power": 141,
+      "avg_hr": null,
+      "max_hr": null,
+      "avg_cadence": 82.43662,
+      "avg_speed": 25.6,
+      "max_speed": 46.8,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 317.7,
+      "calories": 318,
+      "carbs_used": 88,
+      "carbs_ingested": null,
+      "variability_index": 1.1015625,
+      "decoupling": null,
+      "elevation_m": 34.2,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "power_zones": {
+          "z1_time": 778,
+          "z2_time": 30,
+          "z3_time": 1667,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "activity_3",
+      "date": "2026-04-22T13:47:07",
+      "type": "VirtualRide",
+      "name": "MyWhoosh - suabe",
+      "duration_hours": 0.5,
+      "distance_km": 10.04,
+      "tss": 23,
+      "intensity_factor": 67.17949,
+      "avg_power": 127,
+      "normalized_power": 131,
+      "avg_hr": null,
+      "max_hr": null,
+      "avg_cadence": 72.0897,
+      "avg_speed": 20.0,
+      "max_speed": 52.5,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 229.5,
+      "calories": 230,
+      "carbs_used": 64,
+      "carbs_ingested": null,
+      "variability_index": 1.031496,
+      "decoupling": null,
+      "elevation_m": 124.4,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "power_zones": {
+          "z1_time": 347,
+          "z2_time": 1459,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    }
+  ],
+  "wellness_data": [
+    {
+      "date": "2026-04-20",
+      "resting_hr": 64,
+      "hrv_sdnn": 69.0
+    },
+    {
+      "date": "2026-04-21",
+      "resting_hr": 63,
+      "hrv_sdnn": 53.0
+    },
+    {
+      "date": "2026-04-22",
+      "resting_hr": 64,
+      "hrv_sdnn": 30.0
+    },
+    {
+      "date": "2026-04-23",
+      "resting_hr": 71,
+      "hrv_sdnn": 35.0
+    },
+    {
+      "date": "2026-04-24",
+      "resting_hr": 71,
+      "hrv_sdnn": 28.0
+    },
+    {
+      "date": "2026-04-25",
+      "resting_hr": 67,
+      "hrv_sdnn": 31.0
+    },
+    {
+      "date": "2026-04-26",
+      "resting_hr": 65,
+      "hrv_sdnn": 30.0
+    }
+  ],
+  "planned_workouts": []
+}
