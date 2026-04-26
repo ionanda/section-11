@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-26T12:47:11.546666",
+    "last_updated": "2026-04-26T13:28:23.740018",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -20,7 +20,7 @@
       "atl": 25.23,
       "tsb": 4.89,
       "ramp_rate": -3.95,
-      "fitness_source": "From API"
+      "fitness_source": "Decayed from yesterday"
     },
     "thresholds": {
       "ftp_outdoor": 212,
