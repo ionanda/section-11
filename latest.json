@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-29T11:49:42.493756",
+    "last_updated": "2026-04-29T12:29:39.501596",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -27,7 +27,7 @@
       "ftp_indoor": 195,
       "eftp": 211.4,
       "w_prime_kj": 17.8,
-      "vo2max": null
+      "vo2max": 39.44
     },
     "current_metrics": {
       "weight_kg": 75.7,
