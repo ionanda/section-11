@@ -1,0 +1,226 @@
+{
+  "READ_THIS_FIRST": {
+    "instruction_for_ai": "Use pre-calculated metrics."
+  },
+  "metadata": {
+    "athlete_id": "REDACTED",
+    "last_updated": "2026-04-30T15:25:50.429605",
+    "version": "3.5.5"
+  },
+  "alerts": [],
+  "history": {
+    "available": true
+  },
+  "summary": {
+    "total_activities": 2
+  },
+  "current_status": {
+    "fitness": {
+      "ctl": 36.09,
+      "atl": 52.33,
+      "tsb": -16.24,
+      "ramp_rate": 4.58,
+      "fitness_source": "Decayed from yesterday"
+    },
+    "thresholds": {
+      "ftp_outdoor": 212,
+      "ftp_indoor": 195,
+      "eftp": 211.4,
+      "w_prime_kj": 17.8,
+      "vo2max": null
+    },
+    "current_metrics": {
+      "weight_kg": 75.7,
+      "resting_hr": 66,
+      "hrv": 62.0,
+      "sleep_hours": 6.96
+    }
+  },
+  "derived_metrics": {
+    "recovery_index": 1.58,
+    "hrv_baseline_7d": 39.4,
+    "rhr_baseline_7d": 66.1,
+    "latest_hrv": 62.0,
+    "latest_rhr": 66,
+    "acwr": 1.0,
+    "monotony": 0.51,
+    "strain": 163.0,
+    "tss_7d_total": 320.0,
+    "tss_28d_total": 1285.0,
+    "zone_distribution_7d": {
+      "z1_hours": 2.44,
+      "z2_hours": 0.52,
+      "z3_hours": 0.84,
+      "z4_plus_hours": 1.24,
+      "total_hours": 6.05
+    },
+    "hard_days_this_week": 2,
+    "seiler_tid_7d": {
+      "z1_pct": 58.6,
+      "z2_pct": 16.7,
+      "z3_pct": 24.6,
+      "polarization_index": 1.94,
+      "classification": "High Intensity"
+    },
+    "seiler_tid_28d": {
+      "z1_pct": 60.4,
+      "z2_pct": 13.4,
+      "z3_pct": 26.2,
+      "polarization_index": 2.07,
+      "classification": "Polarized"
+    },
+    "capability": {
+      "durability": {
+        "mean_decoupling_7d": null,
+        "mean_decoupling_28d": null,
+        "trend": null
+      },
+      "tid_comparison": {
+        "drift": "consistent"
+      }
+    },
+    "phase_detected": "Base"
+  },
+  "recent_activities": [
+    {
+      "id": "activity_1",
+      "date": "2026-04-28T10:21:57",
+      "type": "Ride",
+      "name": "Training Session",
+      "duration_hours": 3.71,
+      "distance_km": 61.9,
+      "tss": 239,
+      "intensity_factor": 80.18868,
+      "avg_power": 96,
+      "normalized_power": 170,
+      "avg_hr": 135,
+      "max_hr": 180,
+      "avg_cadence": 73.51267,
+      "avg_speed": 16.7,
+      "max_speed": 64.6,
+      "avg_pace": null,
+      "avg_temp": 14.464427,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 1292.1,
+      "calories": 1404,
+      "carbs_used": 451,
+      "carbs_ingested": null,
+      "variability_index": 1.7708334,
+      "decoupling": 29.962135,
+      "elevation_m": 1409.0,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 6155,
+          "z2_time": 2864,
+          "z3_time": 1526,
+          "z4_time": 1511,
+          "z5_time": 545,
+          "z6_time": 545,
+          "z7_time": 221
+        },
+        "power_zones": {
+          "z1_time": 7307,
+          "z2_time": 1095,
+          "z3_time": 1375,
+          "z4_time": 1684,
+          "z5_time": 1228,
+          "z6_time": 607,
+          "z7_time": 71
+        }
+      }
+    },
+    {
+      "id": "activity_2",
+      "date": "2026-04-26T17:19:34",
+      "type": "VirtualRide",
+      "name": "MyWhoosh - Subida a un Puerto (Sweet Spot)",
+      "duration_hours": 1.33,
+      "distance_km": 26.77,
+      "tss": 81,
+      "intensity_factor": 77.948715,
+      "avg_power": 130,
+      "normalized_power": 152,
+      "avg_hr": 136,
+      "max_hr": 163,
+      "avg_cadence": 67.60076,
+      "avg_speed": 20.0,
+      "max_speed": 65.0,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 622.8,
+      "calories": 624,
+      "carbs_used": 190,
+      "carbs_ingested": null,
+      "variability_index": 1.1692308,
+      "decoupling": 8.42993,
+      "elevation_m": 298.4,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 1674,
+          "z2_time": 1100,
+          "z3_time": 864,
+          "z4_time": 957,
+          "z5_time": 4,
+          "z6_time": 0,
+          "z7_time": 0
+        },
+        "power_zones": {
+          "z1_time": 1476,
+          "z2_time": 778,
+          "z3_time": 1667,
+          "z4_time": 876,
+          "z5_time": 9,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    }
+  ],
+  "wellness_data": [
+    {
+      "date": "2026-04-24",
+      "resting_hr": 71,
+      "hrv_sdnn": 28.0
+    },
+    {
+      "date": "2026-04-25",
+      "resting_hr": 67,
+      "hrv_sdnn": 31.0
+    },
+    {
+      "date": "2026-04-26",
+      "resting_hr": 65,
+      "hrv_sdnn": 28.0
+    },
+    {
+      "date": "2026-04-27",
+      "resting_hr": 66,
+      "hrv_sdnn": 51.0
+    },
+    {
+      "date": "2026-04-28",
+      "resting_hr": 62,
+      "hrv_sdnn": 42.0
+    },
+    {
+      "date": "2026-04-29",
+      "resting_hr": 66,
+      "hrv_sdnn": 34.0
+    },
+    {
+      "date": "2026-04-30",
+      "resting_hr": 66,
+      "hrv_sdnn": 62.0
+    }
+  ],
+  "planned_workouts": []
+}
