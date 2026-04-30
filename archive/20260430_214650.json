@@ -1,0 +1,268 @@
+{
+  "READ_THIS_FIRST": {
+    "instruction_for_ai": "Use pre-calculated metrics."
+  },
+  "metadata": {
+    "athlete_id": "REDACTED",
+    "last_updated": "2026-04-30T21:20:40.536990",
+    "version": "3.5.5"
+  },
+  "alerts": [],
+  "history": {
+    "available": true
+  },
+  "summary": {
+    "total_activities": 3
+  },
+  "current_status": {
+    "fitness": {
+      "ctl": 34.83,
+      "atl": 46.24,
+      "tsb": -11.41,
+      "ramp_rate": 2.48,
+      "fitness_source": "From API"
+    },
+    "thresholds": {
+      "ftp_outdoor": 212,
+      "ftp_indoor": 195,
+      "eftp": 211.4,
+      "w_prime_kj": 17.8,
+      "vo2max": null
+    },
+    "current_metrics": {
+      "weight_kg": 75.7,
+      "resting_hr": 66,
+      "hrv": 57.0,
+      "sleep_hours": 6.96
+    }
+  },
+  "derived_metrics": {
+    "recovery_index": 1.48,
+    "hrv_baseline_7d": 38.7,
+    "rhr_baseline_7d": 66.1,
+    "latest_hrv": 57.0,
+    "latest_rhr": 66,
+    "acwr": 1.03,
+    "monotony": 0.54,
+    "strain": 181.0,
+    "tss_7d_total": 335.0,
+    "tss_28d_total": 1300.0,
+    "zone_distribution_7d": {
+      "z1_hours": 2.94,
+      "z2_hours": 0.62,
+      "z3_hours": 0.86,
+      "z4_plus_hours": 1.25,
+      "total_hours": 6.67
+    },
+    "hard_days_this_week": 2,
+    "seiler_tid_7d": {
+      "z1_pct": 62.9,
+      "z2_pct": 15.1,
+      "z3_pct": 22.0,
+      "polarization_index": 1.96,
+      "classification": "High Intensity"
+    },
+    "seiler_tid_28d": {
+      "z1_pct": 61.6,
+      "z2_pct": 13.0,
+      "z3_pct": 25.4,
+      "polarization_index": 2.08,
+      "classification": "Polarized"
+    },
+    "capability": {
+      "durability": {
+        "mean_decoupling_7d": null,
+        "mean_decoupling_28d": null,
+        "trend": null
+      },
+      "tid_comparison": {
+        "drift": "consistent"
+      }
+    },
+    "phase_detected": "Base"
+  },
+  "recent_activities": [
+    {
+      "id": "activity_1",
+      "date": "2026-04-30T18:06:05",
+      "type": "VirtualRide",
+      "name": "MyWhoosh - Edo Circuit",
+      "duration_hours": 0.62,
+      "distance_km": 12.59,
+      "tss": 15,
+      "intensity_factor": 49.23077,
+      "avg_power": 86,
+      "normalized_power": 96,
+      "avg_hr": null,
+      "max_hr": null,
+      "avg_cadence": 84.7943,
+      "avg_speed": 20.3,
+      "max_speed": 48.9,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 191.6,
+      "calories": 192,
+      "carbs_used": 86,
+      "carbs_ingested": null,
+      "variability_index": 1.1162791,
+      "decoupling": null,
+      "elevation_m": 63.8,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "power_zones": {
+          "z1_time": 1808,
+          "z2_time": 375,
+          "z3_time": 39,
+          "z4_time": 11,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "activity_2",
+      "date": "2026-04-28T10:21:57",
+      "type": "Ride",
+      "name": "Training Session",
+      "duration_hours": 3.71,
+      "distance_km": 61.9,
+      "tss": 239,
+      "intensity_factor": 80.18868,
+      "avg_power": 96,
+      "normalized_power": 170,
+      "avg_hr": 135,
+      "max_hr": 180,
+      "avg_cadence": 73.51267,
+      "avg_speed": 16.7,
+      "max_speed": 64.6,
+      "avg_pace": null,
+      "avg_temp": 14.464427,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 1292.1,
+      "calories": 1404,
+      "carbs_used": 451,
+      "carbs_ingested": null,
+      "variability_index": 1.7708334,
+      "decoupling": 29.962135,
+      "elevation_m": 1409.0,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 6155,
+          "z2_time": 2864,
+          "z3_time": 1526,
+          "z4_time": 1511,
+          "z5_time": 545,
+          "z6_time": 545,
+          "z7_time": 221
+        },
+        "power_zones": {
+          "z1_time": 7307,
+          "z2_time": 1095,
+          "z3_time": 1375,
+          "z4_time": 1684,
+          "z5_time": 1228,
+          "z6_time": 607,
+          "z7_time": 71
+        }
+      }
+    },
+    {
+      "id": "activity_3",
+      "date": "2026-04-26T17:19:34",
+      "type": "VirtualRide",
+      "name": "MyWhoosh - Subida a un Puerto (Sweet Spot)",
+      "duration_hours": 1.33,
+      "distance_km": 26.77,
+      "tss": 81,
+      "intensity_factor": 77.948715,
+      "avg_power": 130,
+      "normalized_power": 152,
+      "avg_hr": 136,
+      "max_hr": 163,
+      "avg_cadence": 67.60076,
+      "avg_speed": 20.0,
+      "max_speed": 65.0,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 622.8,
+      "calories": 624,
+      "carbs_used": 190,
+      "carbs_ingested": null,
+      "variability_index": 1.1692308,
+      "decoupling": 8.42993,
+      "elevation_m": 298.4,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 1674,
+          "z2_time": 1100,
+          "z3_time": 864,
+          "z4_time": 957,
+          "z5_time": 4,
+          "z6_time": 0,
+          "z7_time": 0
+        },
+        "power_zones": {
+          "z1_time": 1476,
+          "z2_time": 778,
+          "z3_time": 1667,
+          "z4_time": 876,
+          "z5_time": 9,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    }
+  ],
+  "wellness_data": [
+    {
+      "date": "2026-04-24",
+      "resting_hr": 71,
+      "hrv_sdnn": 28.0
+    },
+    {
+      "date": "2026-04-25",
+      "resting_hr": 67,
+      "hrv_sdnn": 31.0
+    },
+    {
+      "date": "2026-04-26",
+      "resting_hr": 65,
+      "hrv_sdnn": 28.0
+    },
+    {
+      "date": "2026-04-27",
+      "resting_hr": 66,
+      "hrv_sdnn": 51.0
+    },
+    {
+      "date": "2026-04-28",
+      "resting_hr": 62,
+      "hrv_sdnn": 42.0
+    },
+    {
+      "date": "2026-04-29",
+      "resting_hr": 66,
+      "hrv_sdnn": 34.0
+    },
+    {
+      "date": "2026-04-30",
+      "resting_hr": 66,
+      "hrv_sdnn": 57.0
+    }
+  ],
+  "planned_workouts": []
+}
