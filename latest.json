@@ -4,69 +4,75 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-01T11:24:21.588243",
+    "last_updated": "2026-05-01T11:47:40.803959",
     "version": "3.5.5"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "metric": "acwr",
+      "severity": "alarm",
+      "context": "ACWR outside safe range."
+    }
+  ],
   "history": {
     "available": true
   },
   "summary": {
-    "total_activities": 3
+    "total_activities": 4
   },
   "current_status": {
     "fitness": {
-      "ctl": 34.01,
-      "atl": 40.09,
-      "tsb": -6.08,
-      "ramp_rate": 2.42,
+      "ctl": 39.28,
+      "atl": 69.91,
+      "tsb": -30.63,
+      "ramp_rate": 7.69,
       "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 212,
       "ftp_indoor": 195,
-      "eftp": 211.4,
-      "w_prime_kj": 17.8,
+      "eftp": 223.0,
+      "w_prime_kj": 18.5,
       "vo2max": null
     },
     "current_metrics": {
       "weight_kg": 75.7,
-      "resting_hr": 60,
+      "resting_hr": 62,
       "hrv": 61.0,
       "sleep_hours": 7.4
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.55,
+    "recovery_index": 1.51,
     "hrv_baseline_7d": 42.4,
-    "rhr_baseline_7d": 64.6,
+    "rhr_baseline_7d": 64.9,
     "latest_hrv": 61.0,
-    "latest_rhr": 60,
-    "acwr": 1.03,
-    "monotony": 0.54,
-    "strain": 181.0,
-    "tss_7d_total": 335.0,
-    "tss_28d_total": 1300.0,
+    "latest_rhr": 62,
+    "acwr": 1.47,
+    "monotony": 0.74,
+    "strain": 414.0,
+    "tss_7d_total": 559.0,
+    "tss_28d_total": 1524.0,
     "zone_distribution_7d": {
-      "z1_hours": 2.94,
-      "z2_hours": 0.62,
-      "z3_hours": 0.86,
-      "z4_plus_hours": 1.25,
-      "total_hours": 6.67
+      "z1_hours": 3.84,
+      "z2_hours": 1.19,
+      "z3_hours": 1.34,
+      "z4_plus_hours": 2.27,
+      "total_hours": 10.1
     },
-    "hard_days_this_week": 2,
+    "hard_days_this_week": 3,
     "seiler_tid_7d": {
-      "z1_pct": 62.9,
-      "z2_pct": 15.1,
-      "z3_pct": 22.0,
-      "polarization_index": 1.96,
+      "z1_pct": 58.2,
+      "z2_pct": 15.5,
+      "z3_pct": 26.3,
+      "polarization_index": 1.99,
       "classification": "High Intensity"
     },
     "seiler_tid_28d": {
-      "z1_pct": 61.6,
-      "z2_pct": 13.0,
-      "z3_pct": 25.4,
-      "polarization_index": 2.08,
+      "z1_pct": 60.0,
+      "z2_pct": 13.4,
+      "z3_pct": 26.6,
+      "polarization_index": 2.07,
       "classification": "Polarized"
     },
     "capability": {
@@ -79,11 +85,62 @@
         "drift": "consistent"
       }
     },
-    "phase_detected": "Base"
+    "phase_detected": "Overreached"
   },
   "recent_activities": [
     {
       "id": "activity_1",
+      "date": "2026-05-01T10:02:04",
+      "type": "Ride",
+      "name": "Training Session",
+      "duration_hours": 2.98,
+      "distance_km": 60.88,
+      "tss": 224,
+      "intensity_factor": 86.79245,
+      "avg_power": 152,
+      "normalized_power": 184,
+      "avg_hr": 143,
+      "max_hr": 179,
+      "avg_cadence": 72.45828,
+      "avg_speed": 20.4,
+      "max_speed": 64.2,
+      "avg_pace": null,
+      "avg_temp": 17.652739,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 1629.3,
+      "calories": 1770,
+      "carbs_used": 395,
+      "carbs_ingested": null,
+      "variability_index": 1.2105263,
+      "decoupling": 3.0714495,
+      "elevation_m": 1172.0,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 2495,
+          "z2_time": 3091,
+          "z3_time": 1761,
+          "z4_time": 2264,
+          "z5_time": 380,
+          "z6_time": 365,
+          "z7_time": 363
+        },
+        "power_zones": {
+          "z1_time": 3230,
+          "z2_time": 2050,
+          "z3_time": 1751,
+          "z4_time": 1735,
+          "z5_time": 1020,
+          "z6_time": 821,
+          "z7_time": 112
+        }
+      }
+    },
+    {
+      "id": "activity_2",
       "date": "2026-04-30T18:06:05",
       "type": "VirtualRide",
       "name": "MyWhoosh - Edo Circuit",
@@ -125,7 +182,7 @@
       }
     },
     {
-      "id": "activity_2",
+      "id": "activity_3",
       "date": "2026-04-28T10:21:57",
       "type": "Ride",
       "name": "Training Session",
@@ -176,7 +233,7 @@
       }
     },
     {
-      "id": "activity_3",
+      "id": "activity_4",
       "date": "2026-04-26T17:19:34",
       "type": "VirtualRide",
       "name": "MyWhoosh - Subida a un Puerto (Sweet Spot)",
@@ -260,7 +317,7 @@
     },
     {
       "date": "2026-05-01",
-      "resting_hr": 60,
+      "resting_hr": 62,
       "hrv_sdnn": 61.0
     }
   ],
