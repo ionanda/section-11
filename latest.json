@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-06T00:01:01.723948",
+    "last_updated": "2026-05-06T01:04:15.836989",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -16,16 +16,16 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 36.45,
-      "atl": 41.23,
-      "tsb": -4.78,
-      "ramp_rate": 1.13,
+      "ctl": 34.88,
+      "atl": 34.22,
+      "tsb": 0.66,
+      "ramp_rate": -0.44,
       "fitness_source": "Decayed from yesterday"
     },
     "thresholds": {
       "ftp_outdoor": 223,
       "ftp_indoor": 195,
-      "eftp": 223.0,
+      "eftp": 222.8,
       "w_prime_kj": 18.5,
       "vo2max": null
     },
