@@ -1,0 +1,175 @@
+{
+  "READ_THIS_FIRST": {
+    "instruction_for_ai": "Use pre-calculated metrics."
+  },
+  "metadata": {
+    "athlete_id": "REDACTED",
+    "last_updated": "2026-05-10T14:24:33.279787",
+    "version": "3.5.5"
+  },
+  "alerts": [],
+  "history": {
+    "available": true
+  },
+  "summary": {
+    "total_activities": 1
+  },
+  "current_status": {
+    "fitness": {
+      "ctl": 33.25,
+      "atl": 27.06,
+      "tsb": 6.19,
+      "ramp_rate": -4.21,
+      "fitness_source": "Decayed from yesterday"
+    },
+    "thresholds": {
+      "ftp_outdoor": 223,
+      "ftp_indoor": 195,
+      "eftp": 221.7,
+      "w_prime_kj": 18.4,
+      "vo2max": null
+    },
+    "current_metrics": {
+      "weight_kg": 75.7,
+      "resting_hr": 60,
+      "hrv": 31.0,
+      "sleep_hours": 5.98
+    }
+  },
+  "derived_metrics": {
+    "recovery_index": 0.61,
+    "hrv_baseline_7d": 51.1,
+    "rhr_baseline_7d": 60.4,
+    "latest_hrv": 31.0,
+    "latest_rhr": 60,
+    "acwr": 0.26,
+    "monotony": 0.38,
+    "strain": 25.0,
+    "tss_7d_total": 67.0,
+    "tss_28d_total": 1042.0,
+    "zone_distribution_7d": {
+      "z1_hours": 0.35,
+      "z2_hours": 0.15,
+      "z3_hours": 0.38,
+      "z4_plus_hours": 0.2,
+      "total_hours": 1.16
+    },
+    "hard_days_this_week": 1,
+    "seiler_tid_7d": {
+      "z1_pct": 46.0,
+      "z2_pct": 35.5,
+      "z3_pct": 18.5,
+      "polarization_index": null,
+      "classification": "Pyramidal"
+    },
+    "seiler_tid_28d": {
+      "z1_pct": 59.0,
+      "z2_pct": 17.0,
+      "z3_pct": 24.0,
+      "polarization_index": 1.92,
+      "classification": "High Intensity"
+    },
+    "capability": {
+      "durability": {
+        "mean_decoupling_7d": null,
+        "mean_decoupling_28d": null,
+        "trend": null
+      },
+      "tid_comparison": {
+        "drift": "consistent"
+      }
+    },
+    "phase_detected": "Base"
+  },
+  "recent_activities": [
+    {
+      "id": "activity_1",
+      "date": "2026-05-09T12:26:26",
+      "type": "VirtualRide",
+      "name": "MyWhoosh - (Over/Unders)",
+      "duration_hours": 1.08,
+      "distance_km": 16.63,
+      "tss": 67,
+      "intensity_factor": 78.46154,
+      "avg_power": 134,
+      "normalized_power": 153,
+      "avg_hr": 135,
+      "max_hr": 175,
+      "avg_cadence": 76.83538,
+      "avg_speed": 15.4,
+      "max_speed": 55.6,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 521.9,
+      "calories": 523,
+      "carbs_used": 153,
+      "carbs_ingested": null,
+      "variability_index": 1.141791,
+      "decoupling": 2.1327183,
+      "elevation_m": 366.20007,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 1356,
+          "z2_time": 1712,
+          "z3_time": 253,
+          "z4_time": 328,
+          "z5_time": 109,
+          "z6_time": 24,
+          "z7_time": 8
+        },
+        "power_zones": {
+          "z1_time": 1268,
+          "z2_time": 525,
+          "z3_time": 1383,
+          "z4_time": 716,
+          "z5_time": 4,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    }
+  ],
+  "wellness_data": [
+    {
+      "date": "2026-05-04",
+      "resting_hr": 58,
+      "hrv_sdnn": 55.0
+    },
+    {
+      "date": "2026-05-05",
+      "resting_hr": 62,
+      "hrv_sdnn": 49.0
+    },
+    {
+      "date": "2026-05-06",
+      "resting_hr": 60,
+      "hrv_sdnn": 57.0
+    },
+    {
+      "date": "2026-05-07",
+      "resting_hr": 61,
+      "hrv_sdnn": 62.0
+    },
+    {
+      "date": "2026-05-08",
+      "resting_hr": 62,
+      "hrv_sdnn": 39.0
+    },
+    {
+      "date": "2026-05-09",
+      "resting_hr": 60,
+      "hrv_sdnn": 65.0
+    },
+    {
+      "date": "2026-05-10",
+      "resting_hr": 60,
+      "hrv_sdnn": 31.0
+    }
+  ],
+  "planned_workouts": []
+}
