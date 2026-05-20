@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-19T23:40:44.877589",
+    "last_updated": "2026-05-20T00:07:59.763087",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -16,37 +16,37 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 27.92,
-      "atl": 9.86,
-      "tsb": 18.06,
-      "ramp_rate": -5.06,
+      "ctl": 27.27,
+      "atl": 8.55,
+      "tsb": 18.72,
+      "ramp_rate": -4.94,
       "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 223,
       "ftp_indoor": 195,
-      "eftp": 219.7,
+      "eftp": 219.5,
       "w_prime_kj": 18.3,
       "vo2max": null
     },
     "current_metrics": {
       "weight_kg": 75.7,
-      "resting_hr": 71,
-      "hrv": 50.0,
+      "resting_hr": null,
+      "hrv": null,
       "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.81,
-    "hrv_baseline_7d": 55.0,
-    "rhr_baseline_7d": 63.4,
-    "latest_hrv": 50.0,
-    "latest_rhr": 71,
+    "recovery_index": null,
+    "hrv_baseline_7d": 52.5,
+    "rhr_baseline_7d": 63.8,
+    "latest_hrv": null,
+    "latest_rhr": null,
     "acwr": 0.0,
     "monotony": null,
     "strain": null,
     "tss_7d_total": 0,
-    "tss_28d_total": 741.0,
+    "tss_28d_total": 718.0,
     "zone_distribution_7d": {
       "z1_hours": 0.0,
       "z2_hours": 0.0,
@@ -60,10 +60,10 @@
       "polarization_index": null
     },
     "seiler_tid_28d": {
-      "z1_pct": 57.9,
-      "z2_pct": 19.0,
-      "z3_pct": 23.1,
-      "polarization_index": 1.85,
+      "z1_pct": 56.0,
+      "z2_pct": 19.9,
+      "z3_pct": 24.1,
+      "polarization_index": 1.83,
       "classification": "High Intensity"
     },
     "capability": {
@@ -80,11 +80,6 @@
   },
   "recent_activities": [],
   "wellness_data": [
-    {
-      "date": "2026-05-13",
-      "resting_hr": 61,
-      "hrv_sdnn": 70.0
-    },
     {
       "date": "2026-05-14",
       "resting_hr": 58,
@@ -114,6 +109,11 @@
       "date": "2026-05-19",
       "resting_hr": 71,
       "hrv_sdnn": 50.0
+    },
+    {
+      "date": "2026-05-20",
+      "resting_hr": null,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
