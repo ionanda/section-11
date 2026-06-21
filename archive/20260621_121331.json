@@ -1,0 +1,120 @@
+{
+  "READ_THIS_FIRST": {
+    "instruction_for_ai": "Use pre-calculated metrics."
+  },
+  "metadata": {
+    "athlete_id": "REDACTED",
+    "last_updated": "2026-06-21T11:22:49.741751",
+    "version": "3.5.5"
+  },
+  "alerts": [],
+  "history": {
+    "available": true
+  },
+  "summary": {
+    "total_activities": 0
+  },
+  "current_status": {
+    "fitness": {
+      "ctl": 17.28,
+      "atl": 4.14,
+      "tsb": 13.14,
+      "ramp_rate": -3.13,
+      "fitness_source": "From API"
+    },
+    "thresholds": {
+      "ftp_outdoor": 223,
+      "ftp_indoor": 195,
+      "eftp": 214.0,
+      "w_prime_kj": 17.8,
+      "vo2max": null
+    },
+    "current_metrics": {
+      "weight_kg": 75.7,
+      "resting_hr": null,
+      "hrv": 13.0,
+      "sleep_hours": null
+    }
+  },
+  "derived_metrics": {
+    "recovery_index": null,
+    "hrv_baseline_7d": 33.9,
+    "rhr_baseline_7d": 70.2,
+    "latest_hrv": 13.0,
+    "latest_rhr": null,
+    "acwr": 0.0,
+    "monotony": null,
+    "strain": null,
+    "tss_7d_total": 0,
+    "tss_28d_total": 281.0,
+    "zone_distribution_7d": {
+      "z1_hours": 0.0,
+      "z2_hours": 0.0,
+      "z3_hours": 0.0,
+      "z4_plus_hours": 0.0,
+      "total_hours": 0.0
+    },
+    "hard_days_this_week": 0,
+    "seiler_tid_7d": {
+      "classification": null,
+      "polarization_index": null
+    },
+    "seiler_tid_28d": {
+      "z1_pct": 67.8,
+      "z2_pct": 11.7,
+      "z3_pct": 20.5,
+      "polarization_index": 2.07,
+      "classification": "Polarized"
+    },
+    "capability": {
+      "durability": {
+        "mean_decoupling_7d": null,
+        "mean_decoupling_28d": null,
+        "trend": null
+      },
+      "tid_comparison": {
+        "drift": "consistent"
+      }
+    },
+    "phase_detected": "Base"
+  },
+  "recent_activities": [],
+  "wellness_data": [
+    {
+      "date": "2026-06-15",
+      "resting_hr": 71,
+      "hrv_sdnn": 34.0
+    },
+    {
+      "date": "2026-06-16",
+      "resting_hr": 66,
+      "hrv_sdnn": 48.0
+    },
+    {
+      "date": "2026-06-17",
+      "resting_hr": 71,
+      "hrv_sdnn": 42.0
+    },
+    {
+      "date": "2026-06-18",
+      "resting_hr": 69,
+      "hrv_sdnn": 50.0
+    },
+    {
+      "date": "2026-06-19",
+      "resting_hr": null,
+      "hrv_sdnn": 21.0
+    },
+    {
+      "date": "2026-06-20",
+      "resting_hr": 74,
+      "hrv_sdnn": 29.0
+    },
+    {
+      "date": "2026-06-21",
+      "resting_hr": null,
+      "hrv_sdnn": 13.0
+    }
+  ],
+  "planned_workouts": []
+}
