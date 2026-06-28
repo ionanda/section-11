@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-27T23:35:27.073608",
+    "last_updated": "2026-06-28T00:06:29.097614",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -16,32 +16,32 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 14.98,
-      "atl": 1.76,
-      "tsb": 13.22,
-      "ramp_rate": -2.72,
+      "ctl": 14.63,
+      "atl": 1.52,
+      "tsb": 13.11,
+      "ramp_rate": -2.65,
       "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 223,
       "ftp_indoor": 195,
-      "eftp": 212.8,
+      "eftp": 212.5,
       "w_prime_kj": 17.7,
       "vo2max": null
     },
     "current_metrics": {
       "weight_kg": 75.7,
-      "resting_hr": 62,
-      "hrv": 23.0,
-      "sleep_hours": 5.31
+      "resting_hr": null,
+      "hrv": null,
+      "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.56,
-    "hrv_baseline_7d": 45.4,
-    "rhr_baseline_7d": 68.9,
-    "latest_hrv": 23.0,
-    "latest_rhr": 62,
+    "recovery_index": null,
+    "hrv_baseline_7d": 49.7,
+    "rhr_baseline_7d": 68.3,
+    "latest_hrv": null,
+    "latest_rhr": null,
     "acwr": 0.0,
     "monotony": null,
     "strain": null,
@@ -76,15 +76,10 @@
         "drift": "consistent"
       }
     },
-    "phase_detected": "Overreached"
+    "phase_detected": "Base"
   },
   "recent_activities": [],
   "wellness_data": [
-    {
-      "date": "2026-06-21",
-      "resting_hr": 72,
-      "hrv_sdnn": 20.0
-    },
     {
       "date": "2026-06-22",
       "resting_hr": 72,
@@ -114,6 +109,11 @@
       "date": "2026-06-27",
       "resting_hr": 62,
       "hrv_sdnn": 23.0
+    },
+    {
+      "date": "2026-06-28",
+      "resting_hr": null,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
