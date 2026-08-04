@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-03T23:17:15.131051",
+    "last_updated": "2026-08-04T00:57:24.092892",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -16,17 +16,17 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 16.35,
-      "atl": 19.98,
-      "tsb": -3.63,
-      "ramp_rate": -0.87,
+      "ctl": 15.96,
+      "atl": 17.32,
+      "tsb": -1.36,
+      "ramp_rate": -0.85,
       "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 223,
       "ftp_indoor": 195,
-      "eftp": 210.0,
-      "w_prime_kj": 17.5,
+      "eftp": 209.8,
+      "w_prime_kj": 17.4,
       "vo2max": null
     },
     "current_metrics": {
@@ -127,11 +127,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-07-28",
-      "resting_hr": null,
-      "hrv_sdnn": null
-    },
-    {
       "date": "2026-07-29",
       "resting_hr": null,
       "hrv_sdnn": null
@@ -158,6 +153,11 @@
     },
     {
       "date": "2026-08-03",
+      "resting_hr": null,
+      "hrv_sdnn": null
+    },
+    {
+      "date": "2026-08-04",
       "resting_hr": null,
       "hrv_sdnn": null
     }
