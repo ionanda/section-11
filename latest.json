@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-19T23:56:36.485431",
+    "last_updated": "2026-08-20T00:58:04.913029",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -16,10 +16,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 30.07,
-      "atl": 53.89,
-      "tsb": -23.82,
-      "ramp_rate": 4.29,
+      "ctl": 29.36,
+      "atl": 46.72,
+      "tsb": -17.36,
+      "ramp_rate": 4.19,
       "fitness_source": "From API"
     },
     "thresholds": {
@@ -31,22 +31,22 @@
     },
     "current_metrics": {
       "weight_kg": 77.0,
-      "resting_hr": 57,
-      "hrv": 36.0,
-      "sleep_hours": 6.48
+      "resting_hr": 61,
+      "hrv": null,
+      "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.95,
-    "hrv_baseline_7d": 38.0,
-    "rhr_baseline_7d": 57.4,
-    "latest_hrv": 36.0,
-    "latest_rhr": 57,
-    "acwr": 1.14,
+    "recovery_index": null,
+    "hrv_baseline_7d": 38.7,
+    "rhr_baseline_7d": 57.6,
+    "latest_hrv": null,
+    "latest_rhr": 61,
+    "acwr": 1.2,
     "monotony": 0.72,
     "strain": 269.0,
     "tss_7d_total": 373.0,
-    "tss_28d_total": 1304.0,
+    "tss_28d_total": 1245.0,
     "zone_distribution_7d": {
       "z1_hours": 2.34,
       "z2_hours": 1.22,
@@ -63,8 +63,8 @@
       "classification": "Polarized"
     },
     "seiler_tid_28d": {
-      "z1_pct": 62.9,
-      "z2_pct": 16.3,
+      "z1_pct": 62.7,
+      "z2_pct": 16.4,
       "z3_pct": 20.8,
       "polarization_index": 1.9,
       "classification": "High Intensity"
@@ -238,11 +238,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-08-13",
-      "resting_hr": 60,
-      "hrv_sdnn": 34.0
-    },
-    {
       "date": "2026-08-14",
       "resting_hr": 60,
       "hrv_sdnn": 40.0
@@ -271,6 +266,11 @@
       "date": "2026-08-19",
       "resting_hr": 57,
       "hrv_sdnn": 36.0
+    },
+    {
+      "date": "2026-08-20",
+      "resting_hr": 61,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
