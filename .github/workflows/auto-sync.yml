@@ -70,7 +70,8 @@ jobs:
             --intervals-key "$INTERVALS_KEY" \
             --github-token "$GITHUB_TOKEN" \
             --github-repo "$GITHUB_REPO" \
-            --days 7 || {
+            --days 7 \
+            --history || {
               echo "❌ Sync script failed with exit code $?"
               exit 1
             }
