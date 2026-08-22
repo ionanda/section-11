@@ -70,11 +70,19 @@ jobs:
             --intervals-key "$INTERVALS_KEY" \
             --github-token "$GITHUB_TOKEN" \
             --github-repo "$GITHUB_REPO" \
-            --days 7 \
-            --history || {
+            --days 7 || {
               echo "❌ Sync script failed with exit code $?"
               exit 1
             }
+
+          echo "🚀 Generando history.json..."
+          python sync.py \
+            --athlete-id "$ATHLETE_ID" \
+            --intervals-key "$INTERVALS_KEY" \
+            --github-token "$GITHUB_TOKEN" \
+            --github-repo "$GITHUB_REPO" \
+            --days 90 \
+            --output history.json
       
       - name: Verify latest.json was created/updated
         run: |
