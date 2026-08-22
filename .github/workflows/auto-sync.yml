@@ -75,14 +75,18 @@ jobs:
               exit 1
             }
 
-          echo "🚀 Generando history.json..."
-          python sync.py \
-            --athlete-id "$ATHLETE_ID" \
-            --intervals-key "$INTERVALS_KEY" \
-            --github-token "$GITHUB_TOKEN" \
-            --github-repo "$GITHUB_REPO" \
-            --days 90 \
-            --output history.json
+          if [ ! -f history.json ]; then
+            echo "🚀 history.json no existe. Generando histórico de 300 días..."
+            python sync.py \
+              --athlete-id "$ATHLETE_ID" \
+              --intervals-key "$INTERVALS_KEY" \
+              --github-token "$GITHUB_TOKEN" \
+              --github-repo "$GITHUB_REPO" \
+              --days 300 \
+              --output history.json
+          else
+            echo "ℹ️ history.json ya existe, omitiendo descarga pesada."
+          fi
       
       - name: Verify latest.json was created/updated
         run: |
