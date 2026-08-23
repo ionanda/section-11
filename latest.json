@@ -4,28 +4,22 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-22T23:56:41.755551",
+    "last_updated": "2026-08-23T01:03:57.678439",
     "version": "3.5.5"
   },
-  "alerts": [
-    {
-      "metric": "acwr",
-      "severity": "alarm",
-      "context": "ACWR outside safe range."
-    }
-  ],
+  "alerts": [],
   "history": {
     "available": true
   },
   "summary": {
-    "total_activities": 3
+    "total_activities": 2
   },
   "current_status": {
     "fitness": {
-      "ctl": 32.55,
-      "atl": 55.42,
-      "tsb": -22.87,
-      "ramp_rate": 6.71,
+      "ctl": 31.78,
+      "atl": 48.04,
+      "tsb": -16.26,
+      "ramp_rate": 2.13,
       "fitness_source": "From API"
     },
     "thresholds": {
@@ -37,35 +31,35 @@
     },
     "current_metrics": {
       "weight_kg": 77.0,
-      "resting_hr": 55,
-      "hrv": 41.0,
-      "sleep_hours": 7.03
+      "resting_hr": null,
+      "hrv": null,
+      "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.1,
-    "hrv_baseline_7d": 38.4,
-    "rhr_baseline_7d": 56.7,
-    "latest_hrv": 41.0,
-    "latest_rhr": 55,
-    "acwr": 1.45,
-    "monotony": 0.76,
-    "strain": 378.0,
-    "tss_7d_total": 498.0,
+    "recovery_index": null,
+    "hrv_baseline_7d": 38.8,
+    "rhr_baseline_7d": 56.8,
+    "latest_hrv": null,
+    "latest_rhr": null,
+    "acwr": 0.9,
+    "monotony": 0.55,
+    "strain": 170.0,
+    "tss_7d_total": 310.0,
     "tss_28d_total": 1372.0,
     "zone_distribution_7d": {
-      "z1_hours": 3.87,
-      "z2_hours": 1.77,
-      "z3_hours": 1.04,
-      "z4_plus_hours": 1.86,
-      "total_hours": 9.41
+      "z1_hours": 2.62,
+      "z2_hours": 1.29,
+      "z3_hours": 0.67,
+      "z4_plus_hours": 1.06,
+      "total_hours": 6.15
     },
-    "hard_days_this_week": 3,
+    "hard_days_this_week": 2,
     "seiler_tid_7d": {
-      "z1_pct": 66.1,
-      "z2_pct": 12.2,
-      "z3_pct": 21.7,
-      "polarization_index": 2.07,
+      "z1_pct": 69.3,
+      "z2_pct": 11.9,
+      "z3_pct": 18.7,
+      "polarization_index": 2.04,
       "classification": "Polarized"
     },
     "seiler_tid_28d": {
@@ -85,7 +79,7 @@
         "drift": "consistent"
       }
     },
-    "phase_detected": "Overreached"
+    "phase_detected": "Base"
   },
   "recent_activities": [
     {
@@ -189,65 +183,9 @@
           "z7_time": 130
         }
       }
-    },
-    {
-      "id": "activity_3",
-      "date": "2026-08-16T08:25:07",
-      "type": "Ride",
-      "name": "Training Session",
-      "duration_hours": 2.91,
-      "distance_km": 52.87,
-      "tss": 188,
-      "intensity_factor": 80.26906,
-      "avg_power": 137,
-      "normalized_power": 179,
-      "avg_hr": 145,
-      "max_hr": 180,
-      "avg_cadence": 72.66244,
-      "avg_speed": 18.1,
-      "max_speed": 57.1,
-      "avg_pace": null,
-      "avg_temp": 21.405626,
-      "weather": null,
-      "humidity": null,
-      "wind_speed": null,
-      "work_kj": 1445.2,
-      "calories": 1570,
-      "carbs_used": 357,
-      "carbs_ingested": null,
-      "variability_index": 1.3065693,
-      "decoupling": 21.225498,
-      "elevation_m": 1359.0,
-      "feel": null,
-      "rpe": null,
-      "zone_distribution": {
-        "hr_zones": {
-          "z1_time": 1860,
-          "z2_time": 2807,
-          "z3_time": 2136,
-          "z4_time": 2861,
-          "z5_time": 496,
-          "z6_time": 197,
-          "z7_time": 128
-        },
-        "power_zones": {
-          "z1_time": 4511,
-          "z2_time": 1755,
-          "z3_time": 1338,
-          "z4_time": 1314,
-          "z5_time": 812,
-          "z6_time": 677,
-          "z7_time": 78
-        }
-      }
     }
   ],
   "wellness_data": [
-    {
-      "date": "2026-08-16",
-      "resting_hr": 56,
-      "hrv_sdnn": 36.0
-    },
     {
       "date": "2026-08-17",
       "resting_hr": 59,
@@ -277,6 +215,11 @@
       "date": "2026-08-22",
       "resting_hr": 55,
       "hrv_sdnn": 41.0
+    },
+    {
+      "date": "2026-08-23",
+      "resting_hr": null,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
