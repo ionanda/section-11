@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-14T10:58:00.687326",
+    "last_updated": "2026-09-14T16:47:11.069074",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -33,7 +33,7 @@
       "weight_kg": 76.2,
       "resting_hr": 57,
       "hrv": 33.0,
-      "sleep_hours": 6.42
+      "sleep_hours": 6.82
     }
   },
   "derived_metrics": {
