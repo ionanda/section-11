@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-17T23:40:12.352609",
+    "last_updated": "2026-09-18T01:28:31.908829",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -16,9 +16,9 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 36.03,
-      "atl": 30.83,
-      "tsb": 5.2,
+      "ctl": 35.18,
+      "atl": 26.73,
+      "tsb": 8.45,
       "ramp_rate": 0.24,
       "fitness_source": "From API"
     },
@@ -31,22 +31,22 @@
     },
     "current_metrics": {
       "weight_kg": 76.2,
-      "resting_hr": 55,
-      "hrv": 40.0,
-      "sleep_hours": 6.91
+      "resting_hr": 60,
+      "hrv": null,
+      "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.15,
-    "hrv_baseline_7d": 35.8,
-    "rhr_baseline_7d": 56.4,
-    "latest_hrv": 40.0,
-    "latest_rhr": 55,
-    "acwr": 0.95,
+    "recovery_index": null,
+    "hrv_baseline_7d": 36.0,
+    "rhr_baseline_7d": 56.9,
+    "latest_hrv": null,
+    "latest_rhr": 60,
+    "acwr": 0.98,
     "monotony": 0.58,
     "strain": 156.0,
     "tss_7d_total": 269.0,
-    "tss_28d_total": 1131.0,
+    "tss_28d_total": 1095.0,
     "zone_distribution_7d": {
       "z1_hours": 3.12,
       "z2_hours": 0.85,
@@ -63,10 +63,10 @@
       "classification": "Polarized"
     },
     "seiler_tid_28d": {
-      "z1_pct": 60.3,
-      "z2_pct": 14.6,
-      "z3_pct": 25.2,
-      "polarization_index": 2.02,
+      "z1_pct": 58.8,
+      "z2_pct": 15.0,
+      "z3_pct": 26.2,
+      "polarization_index": 2.01,
       "classification": "Polarized"
     },
     "capability": {
@@ -187,11 +187,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-09-11",
-      "resting_hr": 57,
-      "hrv_sdnn": 35.0
-    },
-    {
       "date": "2026-09-12",
       "resting_hr": 57,
       "hrv_sdnn": 32.0
@@ -220,6 +215,11 @@
       "date": "2026-09-17",
       "resting_hr": 55,
       "hrv_sdnn": 40.0
+    },
+    {
+      "date": "2026-09-18",
+      "resting_hr": 60,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
