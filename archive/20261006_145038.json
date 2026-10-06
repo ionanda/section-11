@@ -1,0 +1,120 @@
+{
+  "READ_THIS_FIRST": {
+    "instruction_for_ai": "Use pre-calculated metrics."
+  },
+  "metadata": {
+    "athlete_id": "REDACTED",
+    "last_updated": "2026-10-06T07:58:58.389143",
+    "version": "3.5.5"
+  },
+  "alerts": [],
+  "history": {
+    "available": true
+  },
+  "summary": {
+    "total_activities": 0
+  },
+  "current_status": {
+    "fitness": {
+      "ctl": 22.92,
+      "atl": 2.04,
+      "tsb": 20.88,
+      "ramp_rate": -4.16,
+      "fitness_source": "From API"
+    },
+    "thresholds": {
+      "ftp_outdoor": 223,
+      "ftp_indoor": 195,
+      "eftp": 228.5,
+      "w_prime_kj": 19.3,
+      "vo2max": null
+    },
+    "current_metrics": {
+      "weight_kg": 76.2,
+      "resting_hr": 58,
+      "hrv": 37.0,
+      "sleep_hours": 7.58
+    }
+  },
+  "derived_metrics": {
+    "recovery_index": 1.12,
+    "hrv_baseline_7d": 33.6,
+    "rhr_baseline_7d": 59,
+    "latest_hrv": 37.0,
+    "latest_rhr": 58,
+    "acwr": 0.0,
+    "monotony": null,
+    "strain": null,
+    "tss_7d_total": 0,
+    "tss_28d_total": 269.0,
+    "zone_distribution_7d": {
+      "z1_hours": 0.0,
+      "z2_hours": 0.0,
+      "z3_hours": 0.0,
+      "z4_plus_hours": 0.0,
+      "total_hours": 0.0
+    },
+    "hard_days_this_week": 0,
+    "seiler_tid_7d": {
+      "classification": null,
+      "polarization_index": null
+    },
+    "seiler_tid_28d": {
+      "z1_pct": 74.9,
+      "z2_pct": 8.8,
+      "z3_pct": 16.3,
+      "polarization_index": 2.14,
+      "classification": "Polarized"
+    },
+    "capability": {
+      "durability": {
+        "mean_decoupling_7d": null,
+        "mean_decoupling_28d": null,
+        "trend": null
+      },
+      "tid_comparison": {
+        "drift": "consistent"
+      }
+    },
+    "phase_detected": "Base"
+  },
+  "recent_activities": [],
+  "wellness_data": [
+    {
+      "date": "2026-09-30",
+      "resting_hr": 55,
+      "hrv_sdnn": 39.0
+    },
+    {
+      "date": "2026-10-01",
+      "resting_hr": 61,
+      "hrv_sdnn": 36.0
+    },
+    {
+      "date": "2026-10-02",
+      "resting_hr": 56,
+      "hrv_sdnn": 36.0
+    },
+    {
+      "date": "2026-10-03",
+      "resting_hr": 64,
+      "hrv_sdnn": 25.0
+    },
+    {
+      "date": "2026-10-04",
+      "resting_hr": 60,
+      "hrv_sdnn": 27.0
+    },
+    {
+      "date": "2026-10-05",
+      "resting_hr": 59,
+      "hrv_sdnn": 35.0
+    },
+    {
+      "date": "2026-10-06",
+      "resting_hr": 58,
+      "hrv_sdnn": 37.0
+    }
+  ],
+  "planned_workouts": []
+}
