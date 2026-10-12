@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-11T22:28:07.816914",
+    "last_updated": "2026-10-12T01:32:58.690421",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -16,16 +16,16 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 20.35,
-      "atl": 1.0,
-      "tsb": 19.35,
-      "ramp_rate": -3.69,
+      "ctl": 19.87,
+      "atl": 0.87,
+      "tsb": 19.0,
+      "ramp_rate": -3.6,
       "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 223,
       "ftp_indoor": 195,
-      "eftp": 227.4,
+      "eftp": 227.1,
       "w_prime_kj": 19.2,
       "vo2max": null
     },
@@ -38,15 +38,15 @@
   },
   "derived_metrics": {
     "recovery_index": null,
-    "hrv_baseline_7d": 31.4,
-    "rhr_baseline_7d": 60,
+    "hrv_baseline_7d": 30.5,
+    "rhr_baseline_7d": 60.2,
     "latest_hrv": null,
     "latest_rhr": null,
-    "acwr": 0.0,
+    "acwr": null,
     "monotony": null,
     "strain": null,
     "tss_7d_total": 0,
-    "tss_28d_total": 115.0,
+    "tss_28d_total": 0,
     "zone_distribution_7d": {
       "z1_hours": 0.0,
       "z2_hours": 0.0,
@@ -60,11 +60,8 @@
       "polarization_index": null
     },
     "seiler_tid_28d": {
-      "z1_pct": 77.9,
-      "z2_pct": 6.5,
-      "z3_pct": 15.6,
-      "polarization_index": 2.27,
-      "classification": "Polarized"
+      "classification": null,
+      "polarization_index": null
     },
     "capability": {
       "durability": {
@@ -80,11 +77,6 @@
   },
   "recent_activities": [],
   "wellness_data": [
-    {
-      "date": "2026-10-05",
-      "resting_hr": 59,
-      "hrv_sdnn": 35.0
-    },
     {
       "date": "2026-10-06",
       "resting_hr": 58,
@@ -112,6 +104,11 @@
     },
     {
       "date": "2026-10-11",
+      "resting_hr": null,
+      "hrv_sdnn": null
+    },
+    {
+      "date": "2026-10-12",
       "resting_hr": null,
       "hrv_sdnn": null
     }
