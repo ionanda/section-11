@@ -4,7 +4,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-24T23:29:45.350426",
+    "last_updated": "2026-10-25T01:27:46.601145",
     "version": "3.5.5"
   },
   "alerts": [],
@@ -16,32 +16,32 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 14.93,
-      "atl": 0.16,
-      "tsb": 14.77,
-      "ramp_rate": -2.71,
+      "ctl": 14.58,
+      "atl": 0.14,
+      "tsb": 14.44,
+      "ramp_rate": -2.64,
       "fitness_source": "From API"
     },
     "thresholds": {
       "ftp_outdoor": 223,
       "ftp_indoor": 195,
-      "eftp": 224.4,
+      "eftp": 224.2,
       "w_prime_kj": 18.9,
       "vo2max": null
     },
     "current_metrics": {
       "weight_kg": 76.2,
-      "resting_hr": 66,
-      "hrv": 22.0,
-      "sleep_hours": 5.65
+      "resting_hr": 67,
+      "hrv": null,
+      "sleep_hours": null
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.76,
-    "hrv_baseline_7d": 27.3,
-    "rhr_baseline_7d": 62.4,
-    "latest_hrv": 22.0,
-    "latest_rhr": 66,
+    "recovery_index": null,
+    "hrv_baseline_7d": 26.8,
+    "rhr_baseline_7d": 63.3,
+    "latest_hrv": null,
+    "latest_rhr": 67,
     "acwr": null,
     "monotony": null,
     "strain": null,
@@ -78,11 +78,6 @@
   "recent_activities": [],
   "wellness_data": [
     {
-      "date": "2026-10-18",
-      "resting_hr": 61,
-      "hrv_sdnn": 30.0
-    },
-    {
       "date": "2026-10-19",
       "resting_hr": 59,
       "hrv_sdnn": 33.0
@@ -111,6 +106,11 @@
       "date": "2026-10-24",
       "resting_hr": 66,
       "hrv_sdnn": 22.0
+    },
+    {
+      "date": "2026-10-25",
+      "resting_hr": 67,
+      "hrv_sdnn": null
     }
   ],
   "planned_workouts": []
